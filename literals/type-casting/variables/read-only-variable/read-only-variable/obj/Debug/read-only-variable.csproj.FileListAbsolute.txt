@@ -1,0 +1,7 @@
+C:\dotnet\literals\type-casting\variables\read-only-variable\read-only-variable\bin\Debug\read-only-variable.exe.config
+C:\dotnet\literals\type-casting\variables\read-only-variable\read-only-variable\bin\Debug\read-only-variable.exe
+C:\dotnet\literals\type-casting\variables\read-only-variable\read-only-variable\bin\Debug\read-only-variable.pdb
+C:\dotnet\literals\type-casting\variables\read-only-variable\read-only-variable\obj\Debug\read-only-variable.csproj.AssemblyReference.cache
+C:\dotnet\literals\type-casting\variables\read-only-variable\read-only-variable\obj\Debug\read-only-variable.csproj.CoreCompileInputs.cache
+C:\dotnet\literals\type-casting\variables\read-only-variable\read-only-variable\obj\Debug\read-only-variable.exe
+C:\dotnet\literals\type-casting\variables\read-only-variable\read-only-variable\obj\Debug\read-only-variable.pdb

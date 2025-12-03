@@ -1,0 +1,7 @@
+C:\dotnet\oop\constructor\StaticConstructorTest\StaticConstructorTest\bin\Debug\StaticConstructorTest.exe.config
+C:\dotnet\oop\constructor\StaticConstructorTest\StaticConstructorTest\bin\Debug\StaticConstructorTest.exe
+C:\dotnet\oop\constructor\StaticConstructorTest\StaticConstructorTest\bin\Debug\StaticConstructorTest.pdb
+C:\dotnet\oop\constructor\StaticConstructorTest\StaticConstructorTest\obj\Debug\StaticConstructorTest.csproj.AssemblyReference.cache
+C:\dotnet\oop\constructor\StaticConstructorTest\StaticConstructorTest\obj\Debug\StaticConstructorTest.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\constructor\StaticConstructorTest\StaticConstructorTest\obj\Debug\StaticConstructorTest.exe
+C:\dotnet\oop\constructor\StaticConstructorTest\StaticConstructorTest\obj\Debug\StaticConstructorTest.pdb

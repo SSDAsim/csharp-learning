@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\literals\\type-casting\\typecasting3-tryparse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7443D4E1-EFB4-41AA-BA58-2C6D5967C2C9}|typecasting3-tryparse\\typecasting3-tryparse.csproj|c:\\dotnet\\literals\\type-casting\\typecasting3-tryparse\\typecasting3-tryparse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7443D4E1-EFB4-41AA-BA58-2C6D5967C2C9}|typecasting3-tryparse\\typecasting3-tryparse.csproj|solutionrelative:typecasting3-tryparse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\literals\\type-casting\\typecasting3-tryparse\\typecasting3-tryparse\\Program.cs",
+              "RelativeDocumentMoniker": "typecasting3-tryparse\\Program.cs",
+              "ToolTip": "C:\\dotnet\\literals\\type-casting\\typecasting3-tryparse\\typecasting3-tryparse\\Program.cs*",
+              "RelativeToolTip": "typecasting3-tryparse\\Program.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:40:56.87Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

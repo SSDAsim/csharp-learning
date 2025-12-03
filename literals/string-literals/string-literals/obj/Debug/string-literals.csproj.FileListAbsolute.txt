@@ -1,0 +1,7 @@
+C:\dotnet\literals\string-literals\string-literals\bin\Debug\string-literals.exe.config
+C:\dotnet\literals\string-literals\string-literals\bin\Debug\string-literals.exe
+C:\dotnet\literals\string-literals\string-literals\bin\Debug\string-literals.pdb
+C:\dotnet\literals\string-literals\string-literals\obj\Debug\string-literals.csproj.AssemblyReference.cache
+C:\dotnet\literals\string-literals\string-literals\obj\Debug\string-literals.csproj.CoreCompileInputs.cache
+C:\dotnet\literals\string-literals\string-literals\obj\Debug\string-literals.exe
+C:\dotnet\literals\string-literals\string-literals\obj\Debug\string-literals.pdb

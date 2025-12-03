@@ -1,0 +1,7 @@
+C:\dotnet\literals\type-casting\typecasting3-tryparse\typecasting3-tryparse\bin\Debug\typecasting3-tryparse.exe.config
+C:\dotnet\literals\type-casting\typecasting3-tryparse\typecasting3-tryparse\bin\Debug\typecasting3-tryparse.exe
+C:\dotnet\literals\type-casting\typecasting3-tryparse\typecasting3-tryparse\bin\Debug\typecasting3-tryparse.pdb
+C:\dotnet\literals\type-casting\typecasting3-tryparse\typecasting3-tryparse\obj\Debug\typecasting3-tryparse.csproj.AssemblyReference.cache
+C:\dotnet\literals\type-casting\typecasting3-tryparse\typecasting3-tryparse\obj\Debug\typecasting3-tryparse.csproj.CoreCompileInputs.cache
+C:\dotnet\literals\type-casting\typecasting3-tryparse\typecasting3-tryparse\obj\Debug\typecasting3-tryparse.exe
+C:\dotnet\literals\type-casting\typecasting3-tryparse\typecasting3-tryparse\obj\Debug\typecasting3-tryparse.pdb

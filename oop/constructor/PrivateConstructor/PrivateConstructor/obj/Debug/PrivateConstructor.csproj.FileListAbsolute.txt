@@ -1,0 +1,7 @@
+C:\dotnet\oop\constructor\PrivateConstructor\PrivateConstructor\obj\Debug\PrivateConstructor.csproj.AssemblyReference.cache
+C:\dotnet\oop\constructor\PrivateConstructor\PrivateConstructor\obj\Debug\PrivateConstructor.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\constructor\PrivateConstructor\PrivateConstructor\bin\Debug\PrivateConstructor.exe.config
+C:\dotnet\oop\constructor\PrivateConstructor\PrivateConstructor\bin\Debug\PrivateConstructor.exe
+C:\dotnet\oop\constructor\PrivateConstructor\PrivateConstructor\bin\Debug\PrivateConstructor.pdb
+C:\dotnet\oop\constructor\PrivateConstructor\PrivateConstructor\obj\Debug\PrivateConstructor.exe
+C:\dotnet\oop\constructor\PrivateConstructor\PrivateConstructor\obj\Debug\PrivateConstructor.pdb

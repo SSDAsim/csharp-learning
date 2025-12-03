@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\oop\\constructor\\StaticConstructorRealTime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B567CBC9-62F0-4C31-881A-9348B5FD8E3B}|StaticConstructorRealTime\\StaticConstructorRealTime.csproj|c:\\dotnet\\oop\\constructor\\staticconstructorrealtime\\staticconstructorrealtime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B567CBC9-62F0-4C31-881A-9348B5FD8E3B}|StaticConstructorRealTime\\StaticConstructorRealTime.csproj|solutionrelative:staticconstructorrealtime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\oop\\constructor\\StaticConstructorRealTime\\StaticConstructorRealTime\\Program.cs",
+              "RelativeDocumentMoniker": "StaticConstructorRealTime\\Program.cs",
+              "ToolTip": "C:\\dotnet\\oop\\constructor\\StaticConstructorRealTime\\StaticConstructorRealTime\\Program.cs*",
+              "RelativeToolTip": "StaticConstructorRealTime\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T09:34:56.181Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

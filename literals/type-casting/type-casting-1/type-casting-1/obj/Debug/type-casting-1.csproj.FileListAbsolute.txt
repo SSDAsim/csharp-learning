@@ -1,0 +1,7 @@
+C:\dotnet\literals\type-casting\type-casting-1\type-casting-1\bin\Debug\type-casting-1.exe.config
+C:\dotnet\literals\type-casting\type-casting-1\type-casting-1\bin\Debug\type-casting-1.exe
+C:\dotnet\literals\type-casting\type-casting-1\type-casting-1\bin\Debug\type-casting-1.pdb
+C:\dotnet\literals\type-casting\type-casting-1\type-casting-1\obj\Debug\type-casting-1.csproj.AssemblyReference.cache
+C:\dotnet\literals\type-casting\type-casting-1\type-casting-1\obj\Debug\type-casting-1.csproj.CoreCompileInputs.cache
+C:\dotnet\literals\type-casting\type-casting-1\type-casting-1\obj\Debug\type-casting-1.exe
+C:\dotnet\literals\type-casting\type-casting-1\type-casting-1\obj\Debug\type-casting-1.pdb

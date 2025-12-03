@@ -1,0 +1,7 @@
+C:\dotnet\input-and-output\string-formatting\string-formatting\bin\Debug\string-formatting.exe.config
+C:\dotnet\input-and-output\string-formatting\string-formatting\bin\Debug\string-formatting.exe
+C:\dotnet\input-and-output\string-formatting\string-formatting\bin\Debug\string-formatting.pdb
+C:\dotnet\input-and-output\string-formatting\string-formatting\obj\Debug\string-formatting.csproj.AssemblyReference.cache
+C:\dotnet\input-and-output\string-formatting\string-formatting\obj\Debug\string-formatting.csproj.CoreCompileInputs.cache
+C:\dotnet\input-and-output\string-formatting\string-formatting\obj\Debug\string-formatting.exe
+C:\dotnet\input-and-output\string-formatting\string-formatting\obj\Debug\string-formatting.pdb

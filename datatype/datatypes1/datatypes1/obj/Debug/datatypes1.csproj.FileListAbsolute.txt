@@ -1,0 +1,7 @@
+C:\dotnet\datatype\datatypes1\datatypes1\bin\Debug\datatypes1.exe.config
+C:\dotnet\datatype\datatypes1\datatypes1\bin\Debug\datatypes1.exe
+C:\dotnet\datatype\datatypes1\datatypes1\bin\Debug\datatypes1.pdb
+C:\dotnet\datatype\datatypes1\datatypes1\obj\Debug\datatypes1.csproj.AssemblyReference.cache
+C:\dotnet\datatype\datatypes1\datatypes1\obj\Debug\datatypes1.csproj.CoreCompileInputs.cache
+C:\dotnet\datatype\datatypes1\datatypes1\obj\Debug\datatypes1.exe
+C:\dotnet\datatype\datatypes1\datatypes1\obj\Debug\datatypes1.pdb

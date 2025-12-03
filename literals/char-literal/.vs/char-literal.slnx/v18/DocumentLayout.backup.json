@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\literals\\char-literal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EAE128-FDD7-4BA0-9DD6-AE25B0E343D5}|char-literal\\char-literal.csproj|c:\\dotnet\\literals\\char-literal\\char-literal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EAE128-FDD7-4BA0-9DD6-AE25B0E343D5}|char-literal\\char-literal.csproj|solutionrelative:char-literal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\literals\\char-literal\\char-literal\\Program.cs",
+              "RelativeDocumentMoniker": "char-literal\\Program.cs",
+              "ToolTip": "C:\\dotnet\\literals\\char-literal\\char-literal\\Program.cs*",
+              "RelativeToolTip": "char-literal\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:08:49.069Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

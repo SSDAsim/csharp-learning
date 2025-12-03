@@ -1,0 +1,7 @@
+C:\dotnet\string\string-builder\string-builder\bin\Debug\string-builder.exe.config
+C:\dotnet\string\string-builder\string-builder\bin\Debug\string-builder.exe
+C:\dotnet\string\string-builder\string-builder\bin\Debug\string-builder.pdb
+C:\dotnet\string\string-builder\string-builder\obj\Debug\string-builder.csproj.AssemblyReference.cache
+C:\dotnet\string\string-builder\string-builder\obj\Debug\string-builder.csproj.CoreCompileInputs.cache
+C:\dotnet\string\string-builder\string-builder\obj\Debug\string-builder.exe
+C:\dotnet\string\string-builder\string-builder\obj\Debug\string-builder.pdb

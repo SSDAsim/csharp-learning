@@ -1,0 +1,7 @@
+C:\dotnet\properties\getter-setter\getter-setter\bin\Debug\getter-setter.exe.config
+C:\dotnet\properties\getter-setter\getter-setter\bin\Debug\getter-setter.exe
+C:\dotnet\properties\getter-setter\getter-setter\bin\Debug\getter-setter.pdb
+C:\dotnet\properties\getter-setter\getter-setter\obj\Debug\getter-setter.csproj.AssemblyReference.cache
+C:\dotnet\properties\getter-setter\getter-setter\obj\Debug\getter-setter.csproj.CoreCompileInputs.cache
+C:\dotnet\properties\getter-setter\getter-setter\obj\Debug\getter-setter.exe
+C:\dotnet\properties\getter-setter\getter-setter\obj\Debug\getter-setter.pdb

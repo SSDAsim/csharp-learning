@@ -1,0 +1,7 @@
+C:\dotnet\loops\perfect-number\perfect-number\bin\Debug\perfect-number.exe.config
+C:\dotnet\loops\perfect-number\perfect-number\bin\Debug\perfect-number.exe
+C:\dotnet\loops\perfect-number\perfect-number\bin\Debug\perfect-number.pdb
+C:\dotnet\loops\perfect-number\perfect-number\obj\Debug\perfect-number.csproj.AssemblyReference.cache
+C:\dotnet\loops\perfect-number\perfect-number\obj\Debug\perfect-number.csproj.CoreCompileInputs.cache
+C:\dotnet\loops\perfect-number\perfect-number\obj\Debug\perfect-number.exe
+C:\dotnet\loops\perfect-number\perfect-number\obj\Debug\perfect-number.pdb

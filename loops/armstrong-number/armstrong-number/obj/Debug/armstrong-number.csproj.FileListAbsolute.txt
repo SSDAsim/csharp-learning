@@ -1,0 +1,7 @@
+C:\dotnet\loops\armstrong-number\armstrong-number\bin\Debug\armstrong-number.exe.config
+C:\dotnet\loops\armstrong-number\armstrong-number\bin\Debug\armstrong-number.exe
+C:\dotnet\loops\armstrong-number\armstrong-number\bin\Debug\armstrong-number.pdb
+C:\dotnet\loops\armstrong-number\armstrong-number\obj\Debug\armstrong-number.csproj.AssemblyReference.cache
+C:\dotnet\loops\armstrong-number\armstrong-number\obj\Debug\armstrong-number.csproj.CoreCompileInputs.cache
+C:\dotnet\loops\armstrong-number\armstrong-number\obj\Debug\armstrong-number.exe
+C:\dotnet\loops\armstrong-number\armstrong-number\obj\Debug\armstrong-number.pdb

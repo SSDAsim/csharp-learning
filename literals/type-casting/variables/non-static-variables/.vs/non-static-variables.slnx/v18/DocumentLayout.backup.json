@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\literals\\type-casting\\variables\\non-static-variables\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED74777B-1C72-423E-B712-DDF4EC3C1D82}|non-static-variables\\non-static-variables.csproj|c:\\dotnet\\literals\\type-casting\\variables\\non-static-variables\\non-static-variables\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED74777B-1C72-423E-B712-DDF4EC3C1D82}|non-static-variables\\non-static-variables.csproj|solutionrelative:non-static-variables\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\literals\\type-casting\\variables\\non-static-variables\\non-static-variables\\Program.cs",
+              "RelativeDocumentMoniker": "non-static-variables\\Program.cs",
+              "ToolTip": "C:\\dotnet\\literals\\type-casting\\variables\\non-static-variables\\non-static-variables\\Program.cs",
+              "RelativeToolTip": "non-static-variables\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:53:15.93Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

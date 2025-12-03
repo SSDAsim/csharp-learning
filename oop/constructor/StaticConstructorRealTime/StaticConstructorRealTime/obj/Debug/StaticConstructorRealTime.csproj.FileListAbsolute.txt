@@ -1,0 +1,7 @@
+C:\dotnet\oop\constructor\StaticConstructorRealTime\StaticConstructorRealTime\bin\Debug\StaticConstructorRealTime.exe.config
+C:\dotnet\oop\constructor\StaticConstructorRealTime\StaticConstructorRealTime\bin\Debug\StaticConstructorRealTime.exe
+C:\dotnet\oop\constructor\StaticConstructorRealTime\StaticConstructorRealTime\bin\Debug\StaticConstructorRealTime.pdb
+C:\dotnet\oop\constructor\StaticConstructorRealTime\StaticConstructorRealTime\obj\Debug\StaticConstructorRealTime.csproj.AssemblyReference.cache
+C:\dotnet\oop\constructor\StaticConstructorRealTime\StaticConstructorRealTime\obj\Debug\StaticConstructorRealTime.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\constructor\StaticConstructorRealTime\StaticConstructorRealTime\obj\Debug\StaticConstructorRealTime.exe
+C:\dotnet\oop\constructor\StaticConstructorRealTime\StaticConstructorRealTime\obj\Debug\StaticConstructorRealTime.pdb

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\properties\\Properties\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF4E16E-5ABC-4A9F-8CE6-B0D5EB8F9FFD}|Properties\\Properties.csproj|c:\\dotnet\\properties\\properties\\properties\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AF4E16E-5ABC-4A9F-8CE6-B0D5EB8F9FFD}|Properties\\Properties.csproj|solutionrelative:properties\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\properties\\Properties\\Properties\\Program.cs",
+              "RelativeDocumentMoniker": "Properties\\Program.cs",
+              "ToolTip": "C:\\dotnet\\properties\\Properties\\Properties\\Program.cs",
+              "RelativeToolTip": "Properties\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwDcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T11:33:21.435Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\loops\\perfect-number\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAAAAFAE-B2CA-48D0-9DA3-1B85CD30A7DD}|perfect-number\\perfect-number.csproj|c:\\dotnet\\loops\\perfect-number\\perfect-number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAAAAFAE-B2CA-48D0-9DA3-1B85CD30A7DD}|perfect-number\\perfect-number.csproj|solutionrelative:perfect-number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\loops\\perfect-number\\perfect-number\\Program.cs",
+              "RelativeDocumentMoniker": "perfect-number\\Program.cs",
+              "ToolTip": "C:\\dotnet\\loops\\perfect-number\\perfect-number\\Program.cs",
+              "RelativeToolTip": "perfect-number\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T09:28:33.81Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

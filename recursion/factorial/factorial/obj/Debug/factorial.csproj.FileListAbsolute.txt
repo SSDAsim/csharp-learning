@@ -1,0 +1,7 @@
+C:\dotnet\recursion\factorial\factorial\obj\Debug\factorial.csproj.AssemblyReference.cache
+C:\dotnet\recursion\factorial\factorial\obj\Debug\factorial.csproj.CoreCompileInputs.cache
+C:\dotnet\recursion\factorial\factorial\bin\Debug\factorial.exe.config
+C:\dotnet\recursion\factorial\factorial\bin\Debug\factorial.exe
+C:\dotnet\recursion\factorial\factorial\bin\Debug\factorial.pdb
+C:\dotnet\recursion\factorial\factorial\obj\Debug\factorial.exe
+C:\dotnet\recursion\factorial\factorial\obj\Debug\factorial.pdb

@@ -1,0 +1,7 @@
+C:\dotnet\literals\char-literal\char-literal\bin\Debug\char-literal.exe.config
+C:\dotnet\literals\char-literal\char-literal\bin\Debug\char-literal.exe
+C:\dotnet\literals\char-literal\char-literal\bin\Debug\char-literal.pdb
+C:\dotnet\literals\char-literal\char-literal\obj\Debug\char-literal.csproj.AssemblyReference.cache
+C:\dotnet\literals\char-literal\char-literal\obj\Debug\char-literal.csproj.CoreCompileInputs.cache
+C:\dotnet\literals\char-literal\char-literal\obj\Debug\char-literal.exe
+C:\dotnet\literals\char-literal\char-literal\obj\Debug\char-literal.pdb

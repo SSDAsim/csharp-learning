@@ -1,0 +1,7 @@
+C:\dotnet\loops\fibonacci_while_loop\fibonacci_while_loop\bin\Debug\fibonacci_while_loop.exe.config
+C:\dotnet\loops\fibonacci_while_loop\fibonacci_while_loop\bin\Debug\fibonacci_while_loop.exe
+C:\dotnet\loops\fibonacci_while_loop\fibonacci_while_loop\bin\Debug\fibonacci_while_loop.pdb
+C:\dotnet\loops\fibonacci_while_loop\fibonacci_while_loop\obj\Debug\fibonacci_while_loop.csproj.AssemblyReference.cache
+C:\dotnet\loops\fibonacci_while_loop\fibonacci_while_loop\obj\Debug\fibonacci_while_loop.csproj.CoreCompileInputs.cache
+C:\dotnet\loops\fibonacci_while_loop\fibonacci_while_loop\obj\Debug\fibonacci_while_loop.exe
+C:\dotnet\loops\fibonacci_while_loop\fibonacci_while_loop\obj\Debug\fibonacci_while_loop.pdb

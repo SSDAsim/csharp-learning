@@ -1,0 +1,7 @@
+C:\dotnet\oop\constructor\CopyConstructor\CopyConstructor\bin\Debug\CopyConstructor.exe.config
+C:\dotnet\oop\constructor\CopyConstructor\CopyConstructor\bin\Debug\CopyConstructor.exe
+C:\dotnet\oop\constructor\CopyConstructor\CopyConstructor\bin\Debug\CopyConstructor.pdb
+C:\dotnet\oop\constructor\CopyConstructor\CopyConstructor\obj\Debug\CopyConstructor.csproj.AssemblyReference.cache
+C:\dotnet\oop\constructor\CopyConstructor\CopyConstructor\obj\Debug\CopyConstructor.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\constructor\CopyConstructor\CopyConstructor\obj\Debug\CopyConstructor.exe
+C:\dotnet\oop\constructor\CopyConstructor\CopyConstructor\obj\Debug\CopyConstructor.pdb

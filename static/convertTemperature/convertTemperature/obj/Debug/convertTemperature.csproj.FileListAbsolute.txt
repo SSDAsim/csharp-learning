@@ -1,0 +1,7 @@
+C:\dotnet\static\convertTemperature\convertTemperature\bin\Debug\convertTemperature.exe.config
+C:\dotnet\static\convertTemperature\convertTemperature\bin\Debug\convertTemperature.exe
+C:\dotnet\static\convertTemperature\convertTemperature\bin\Debug\convertTemperature.pdb
+C:\dotnet\static\convertTemperature\convertTemperature\obj\Debug\convertTemperature.csproj.AssemblyReference.cache
+C:\dotnet\static\convertTemperature\convertTemperature\obj\Debug\convertTemperature.csproj.CoreCompileInputs.cache
+C:\dotnet\static\convertTemperature\convertTemperature\obj\Debug\convertTemperature.exe
+C:\dotnet\static\convertTemperature\convertTemperature\obj\Debug\convertTemperature.pdb

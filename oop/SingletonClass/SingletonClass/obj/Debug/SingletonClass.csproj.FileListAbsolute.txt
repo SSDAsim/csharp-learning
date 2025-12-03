@@ -1,0 +1,7 @@
+C:\dotnet\oop\SingletonClass\SingletonClass\bin\Debug\SingletonClass.exe.config
+C:\dotnet\oop\SingletonClass\SingletonClass\bin\Debug\SingletonClass.exe
+C:\dotnet\oop\SingletonClass\SingletonClass\bin\Debug\SingletonClass.pdb
+C:\dotnet\oop\SingletonClass\SingletonClass\obj\Debug\SingletonClass.csproj.AssemblyReference.cache
+C:\dotnet\oop\SingletonClass\SingletonClass\obj\Debug\SingletonClass.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\SingletonClass\SingletonClass\obj\Debug\SingletonClass.exe
+C:\dotnet\oop\SingletonClass\SingletonClass\obj\Debug\SingletonClass.pdb
