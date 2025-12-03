@@ -276,6 +276,10 @@ The object of a class in C# will be destroyed by the garbage collector in any of
 2. The Implicit calling of the garbage collector occurs sometime in the middle of the program execution provided the memory is full so the garbage collector will identify unused objects of the program and destroys them.
 3. The Explicit calling of the garbage collector can also be done in the middle of program execution by the programmer with the help of the “Collect()” statement so that if there are any unused objects associated with the program will be destroyed in the middle of the program execution.
 
+### Pints to Remember while working with Destructors in C#:
+1. Destructors are only defined for classes and not in structs.
+2. They can not be called explicitly. The most we can do is to call the garbage collector using GC.Collect()
 
+### Explicit Release of Resources using Dispose Pattern in C#:  
 
-
+If our application is using an expensive external resource, then it is recommended to provide an explicit way to release the resources before the garbage collector frees the object. To release the resource, it is recommended to implement a Dispose method of the IDisposable interface that performs the necessary clean-up for the object. So, basically, we need our class to inherit from the IDisposable interface and provide the implementation.

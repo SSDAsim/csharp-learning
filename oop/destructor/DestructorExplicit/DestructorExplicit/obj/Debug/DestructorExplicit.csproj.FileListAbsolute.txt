@@ -1,0 +1,7 @@
+C:\dotnet\oop\destructor\DestructorExplicit\DestructorExplicit\bin\Debug\DestructorExplicit.exe.config
+C:\dotnet\oop\destructor\DestructorExplicit\DestructorExplicit\bin\Debug\DestructorExplicit.exe
+C:\dotnet\oop\destructor\DestructorExplicit\DestructorExplicit\bin\Debug\DestructorExplicit.pdb
+C:\dotnet\oop\destructor\DestructorExplicit\DestructorExplicit\obj\Debug\DestructorExplicit.csproj.AssemblyReference.cache
+C:\dotnet\oop\destructor\DestructorExplicit\DestructorExplicit\obj\Debug\DestructorExplicit.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\destructor\DestructorExplicit\DestructorExplicit\obj\Debug\DestructorExplicit.exe
+C:\dotnet\oop\destructor\DestructorExplicit\DestructorExplicit\obj\Debug\DestructorExplicit.pdb
