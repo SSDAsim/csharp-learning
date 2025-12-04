@@ -283,3 +283,66 @@ The object of a class in C# will be destroyed by the garbage collector in any of
 ### Explicit Release of Resources using Dispose Pattern in C#:  
 
 If our application is using an expensive external resource, then it is recommended to provide an explicit way to release the resources before the garbage collector frees the object. To release the resource, it is recommended to implement a Dispose method of the IDisposable interface that performs the necessary clean-up for the object. So, basically, we need our class to inherit from the IDisposable interface and provide the implementation.
+
+## Garbage Collection in C#
+
+Garbage collection is a routine or a background process thread that identifies which object are not being used by the program and de-allocates the memory to these objects. 
+
+### Managed and Unmanaged Objects in .NET Framework:
+
+Whenever you create an EXE or any web application using any .NET supported language, these applications are run under the control of *CLR* (Common Language Runtime). If your applications have unused objects, then CLR will clean those objects using the Garbage Collector.
+
+However if you have any other EXE for example Skype, PowerPoint which are made with C++, or C, these will not be under control of CLR. Rather they will run in C++ Runtime environment or their specific environment.
+
+
+#### Managed Code 
+The codes that run under the complete control of CLR are called **Managed Code** in the .NET Framework. CLR will provide all the facilities and features of .NET to the managed code execution like Language Interoperability, Automatic Memory Management, Exception Handling Mechanism, Code Access Security, etc
+
+#### Unmanaged Code
+
+The code (EXE, Web App) that is not run under the control of CLR is called **unmanaged code**. CLR will not provide any facilities and features of .NET to the unmanaged code. Skype, PowerPoint, and Microsoft Excel do not require dot net runtime. They run under their own environment.
+
+#### Managed Objects 
+
+Managed objects are allocated on the managed heap and controlled by the .NET Garbage Collector (GC). These objects are typically instances of classes and structures defined in .NET. The GC automatically manages the memory for managed objects.
+
+#### Unmanaged Objects
+
+The memory of these objects is not managed by the .NET GC. These are objects allocated using the native code, such as call to windows API or using languages such as C or C++. *The developer is responsible for allocating and deallocating the memory of unmanaged objects.*
+
+### Garbage Collection Generations in .NET Framework:
+
+Suppose you have five managed objects in you program. Whenever any new objects are created, they are move into a *Generation 0 Bucket*. Garbage Collector will run as background process thread and continuously check if there are *unused managed objects* in the program.  
+Let's say the application has two unused managed objects, GC will destroy these two objects and move the remaining objects into *Generation 1 Bucket*. Now if our application creates two new objects, they will be moved into *Generation 0 Bucket*.    
+Now the GC will run again, starts from G 0 Bucket, if both objects are unused it will clean the memory and then it will check the G 1 Bucket and suppose one out of three objects is unused, GC will reclaim memory from that object. And move other two used objects into the G 2 Bucket. 
+
+### What are Generations?
+
+Generation define how long the object will stay in the memory. If an object is in G 0, it means that it is short lived and will be destroyed soon. 
+
+### Why do we need Generations?
+
+In large applications, going to check a generation for unused managed objects will be a bulky process. So we divide the generation into three kinds. By doing so, we know if an object is G 2, then it is long lived object and needed by the program so there's no point going and checking them again and again. However, if an object is in G 0, then we know it is short lived.    
+In that way, we visit the G 0 more often than G 2.
+
+**Note:** Garbage collectors will only clean up the managed code. In other words, for any unmanaged code, for those codes to be cleaned up, it has to be provided by unmanaged code, and the garbage collector does not have any control over them to clean up the memory.
+
+### How does using a Destructor in a Class end up in a Double Garbage Collector Loop?
+
+When you define a destructor in your class, the Garbage Collector before destroying the object, will go and ask the question to class, do you have a destructor, if you have a destructor, then move the object to the next generation bucket. In other words, it will not clean up the object having a destructor at that moment itself, even though it is not used. So, it will wait for the destructor to run, and then it will go and clean up the object. Because of this, you will find more objects in Generation 1 and Generation 2 than in Generation 0.
+
+#### How to Overcome the above Problem?
+
+This problem can be overcome by using something called the Finalized Dispose pattern. To implement this, your class should implement the IDisposable interface and provide the implementation for the Dispose method. Within the Dispose method, you need to write the clean-up code for unmanaged objects, and in the end, you need to call GC.SuppressFinalize(true) method by passing true as the input value. This method suppresses any kind of destructor and just goes and cleans up the objects.
+
+## Differences Between Finalize and Dispose in C#
+
+### Finalize Method in C#:
+
+- **Purpose:** used for clean up opertions before an object is garbage collected. It's typically overridden to release the unmanaged resources that the object holds. GC calls Finalize method automatically.
+- Finalize is inherited from *Object* class. It should always call the Finalize method of the base if overridden to ensure that all resources are released properly. 
+
+### Dispose Method:
+- **Purpose:** part of *IDisposable* interface and is implemented to release both managed and unmanaged resources deterministically.
+- Unlike Finalize, it is called explicitly in your code. Usually when you are done using an object.  
+- when implementing Dispose, it's common to follow the dispose pattern, which includes a finalizer call (GC.SuppressFinalize(this)) to prevent Garbage Collector from calling Finalize if Dispose has already been called.  
