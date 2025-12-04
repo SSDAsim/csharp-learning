@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AccessSpecifierDemo/AccessSpecifierDemo.csproj" />
+  <Project Path="AccessSpecifierDemo/AssemblyOne/AssemblyOne.csproj" />
+</Solution>

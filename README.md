@@ -346,3 +346,98 @@ This problem can be overcome by using something called the Finalized Dispose pat
 - **Purpose:** part of *IDisposable* interface and is implemented to release both managed and unmanaged resources deterministically.
 - Unlike Finalize, it is called explicitly in your code. Usually when you are done using an object.  
 - when implementing Dispose, it's common to follow the dispose pattern, which includes a finalizer call (GC.SuppressFinalize(this)) to prevent Garbage Collector from calling Finalize if Dispose has already been called.  
+
+
+## Access Specifiers in C#:
+
+### Understand Type and Type Members in C#:
+
+If you declare a class and its properties. The *class* is a **Type** and the properties are **Type Members**. Type only allows *internal* or *public* access specifier by default. However, the *type members* are allowed all 6 Access Specifiers by default.   
+
+In general classes, structs, enums, interfaces, and delegates are called types, and variables, properties, constructors, methods, etc. that normally reside within a type are called type members. By default, if we have not specified any access specifier, then for the type it is going to be *internal* and for type members it is going to be *private*. 
+
+### What are Assemblies in .NET Framework?
+
+Assemblies are precompiled .NET code that can be run by CLR (Common Language Runtime).   
+- Console Application => Assembly is EXE => can be run directly
+- Class Library Project => Assembly is DLL => can't be run directly
+
+### Access Specifiers for Type Members:
+
+#### Scope of PRIVATE Member 
+
+1. With the class: *YES*
+2. Derived Class in the same Assembly: *NO*
+3. Non-derived class in the same Assembly: *NO*
+5. Derived class in other assemblies: *NO*
+4. Non-derived class in other assemblies: *NO*
+
+
+#### Scope of PUBLIC Member 
+
+1. With the class: *YES*
+2. Derived Class in the same Assembly: *YES*
+3. Non-derived class in the same Assembly: *YES*
+5. Derived class in other assemblies: *YES*
+4. Non-derived class in other assemblies: *YES*
+
+#### Scope of PROTECTED Member 
+
+Protected members are available within the parent class(i.e. containing type) and also within the derived class (classes derived from the containing type).
+
+1. With the class: *YES*
+2. Derived Class in the same Assembly: *YES*
+3. Non-derived class in the same Assembly: *NO*
+5. Derived class in other assemblies: *YES*
+4. Non-derived class in other assemblies: *NO*
+
+#### Scope of INTERNAL ACCESS Member 
+
+A member declared with *internal* access modifier is available anywhere within the containing assembly.
+
+1. With the class: *YES*
+2. Derived Class in the same Assembly: *YES*
+3. Non-derived class in the same Assembly: *YES*
+5. Derived class in other assemblies: *NO*
+4. Non-derived class in other assemblies: *NO*
+
+#### Scope of PROTECTED INTERNAL Member 
+
+Protected internal members in C# can be accessed anywhere in the containing assembly i.e. in which it is declared or from within the derived class in other assembly. 
+
+1. With the class: *YES*
+2. Derived Class in the same Assembly: *YES*
+3. Non-derived class in the same Assembly: *YES*
+5. Derived class in other assemblies: *YES*
+4. Non-derived class in other assemblies: *NO*
+
+#### Scope of PRIVATE PROTECTED Member 
+
+Private Protected members in C# can be accessed within the class and within the derived classes in the same assembly but not in other assembly.
+
+1. With the class: *YES*
+2. Derived Class in the same Assembly: *YES*
+3. Non-derived class in the same Assembly: *NO*
+5. Derived class in other assemblies: *NO*
+4. Non-derived class in other assemblies: *NO*
+
+### Access Specifiers for Type (e.g. class, struct etc):
+
+If a type is declared as *internal* then it is only accessible and available within the same assembly. (Can be inherited only in the same assembly where it is created). In case of *public*, then it can be accessed within same assembly where it is created as well as in other assemblies.
+
+## Encapsulation in C#
+
+### What is the Encapsulation Principle in C#?
+
+Encapsulation hides the internal state and functionality of an object and only allows access through a public set of functions. It binds the state (i.e. Data Memebers) and Behavior (i.e. Methods) into a single unit.
+
+#### How can we Implement Data Hiding or Data Encapsulation in C#?
+
+In C#, Data Encapsulation is implemented.
+
+1. By declaring the variables as private (to restrict their direct access from outside the class)
+2. By defining one pair of public setter and getter methods or properties to access private variables from outside the class.
+
+#### What are the Advantages of Providing Variable Access via Setter and Getter Methods in C#?
+
+- allows us to validate user-given data before storing the value in the variable.

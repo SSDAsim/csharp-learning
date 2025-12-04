@@ -1,0 +1,7 @@
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\bin\Debug\AccessSpecifierDemo.exe.config
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\bin\Debug\AccessSpecifierDemo.exe
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\bin\Debug\AccessSpecifierDemo.pdb
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\obj\Debug\AccessSpecifierDemo.csproj.AssemblyReference.cache
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\obj\Debug\AccessSpecifierDemo.csproj.CoreCompileInputs.cache
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\obj\Debug\AccessSpecifierDemo.exe
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\obj\Debug\AccessSpecifierDemo.pdb

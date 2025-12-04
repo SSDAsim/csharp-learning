@@ -1,0 +1,2 @@
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\AssemblyOne\obj\Debug\AssemblyOne.csproj.AssemblyReference.cache
+C:\dotnet\access-specifier\AccessSpecifierDemo\AccessSpecifierDemo\AssemblyOne\obj\Debug\AssemblyOne.csproj.CoreCompileInputs.cache
