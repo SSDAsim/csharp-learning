@@ -460,3 +460,91 @@ Both *interface* and *abstract classes* and abstract methods provide some mechan
 
 1. Encapsulation => data (or information) hiding, Abstraction => detailed (implementation) hiding
 2. With the Encapsulation Principle, we group data members and member functions into a single unit called class, interface, enum, etc. On the other hand, with the Abstraction Principle, we are exposing the interface or abstract class to the user and hiding implementation details, i.e., hiding the child class information.
+
+## Inheritence in C#
+
+### Why is Parent Class Constructor Accessible to Child Class? (And Rules of Inheritence in C#)
+
+- The reason to call the parent class constructor first is we have to initialize the data members of the parent first in order to pass them to the child class. 
+
+
+- We can Initialize a Parent class variable by using the child class instance to make it a reference variable so that the reference will be consuming the memory of the child class instance. But in this case, also, we cannot call any pure child class members using the reference.
+```csharp
+{
+    static void Main(string[] args) {
+        // A is parent class while B is child class
+        A p;
+        B q = new B();
+
+        // we can initialize a Parent class variable using child class instance
+        p = q;
+
+        // now using 'p', you can call any member of A class (i.e Parent class)
+        p.method1(); 
+
+        // you can not call a member which is purely defined in the child class
+
+        // you need to rememebr References are just pointers to instances. 'p' is just a Reference while 'q' is an instance. Memory will be allocated for the instance and not for the reference.   
+    }
+}
+```
+
+- Object is the parent class for all the classes defined in our Base Class Library as well as all the classes that we defined in our application, so the members (Equals, GetHashCode, GetType, and ToString) of the Object class are accessible from anywhere.
+
+#### GetType()
+
+The *GetType()* method returns the exact runtime type of the current instance. It will tell you the fully qualified name i.e. namespace and class name.
+```csharp 
+Console.WriteLine($"obj1 type: {obj1.GetType()}"); 
+```
+
+- In C#, we don’t have support for multiple inheritances through classes. What we are provided is only a Single Inheritance through classes.
+
+- If parent class has a parameterless constructor, then it will be called implicitly when the child object is created. However, if the Parent class has *Parameterized Constructor*, then it is the responsibility of the programmer to call the Parent constructor explicitly and pass the parameters to the constructor. 
+```csharp
+public class A {
+    public A (int x){
+        //.....
+    }
+    
+    //...
+}
+
+// now the child class will have to pass the paramter using 'base' when calling the constructor
+public class B : A {
+    public B() : base(10){
+        //....
+    }
+
+    // alternatively you can pass dynamic value  
+    public B(int num) : base(num){
+        //...
+    }
+    //....
+
+    // while making an instance of the class (using dynamic value)
+    B obj1 = new B(10);
+}
+```
+
+### Types of Inheritence 
+If a child class has one immediate Parent class, call it **Single Inheritance**, and if more than one immediate Parent class, call it is **multiple inheritance**.
+
+```csharp
+{
+    // single inheritence 
+    public class Child : Parent {
+
+    }
+
+    // multiple inheritence
+    public class Child : Parent1 , Parent2 {
+
+    }
+}
+```
+
+### Classification of Inheritance in C#
+
+1. **Implementation Inheritence:** Whenever a class is derived from another class, then it is called Implementation Inheritence. 
+2. **Interface Inheritence:** Whenever a class is derived from an interface, then it is known as Interface Inheritence.

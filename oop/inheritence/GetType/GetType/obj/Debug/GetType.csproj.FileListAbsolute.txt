@@ -1,0 +1,7 @@
+C:\dotnet\oop\inheritence\GetType\GetType\bin\Debug\GetType.exe.config
+C:\dotnet\oop\inheritence\GetType\GetType\bin\Debug\GetType.exe
+C:\dotnet\oop\inheritence\GetType\GetType\bin\Debug\GetType.pdb
+C:\dotnet\oop\inheritence\GetType\GetType\obj\Debug\GetType.csproj.AssemblyReference.cache
+C:\dotnet\oop\inheritence\GetType\GetType\obj\Debug\GetType.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\inheritence\GetType\GetType\obj\Debug\GetType.exe
+C:\dotnet\oop\inheritence\GetType\GetType\obj\Debug\GetType.pdb
