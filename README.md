@@ -441,3 +441,22 @@ In C#, Data Encapsulation is implemented.
 #### What are the Advantages of Providing Variable Access via Setter and Getter Methods in C#?
 
 - allows us to validate user-given data before storing the value in the variable.
+
+## Abstraction in C#
+
+### What is Abstraction in C#?
+
+A process of defining a class by providing the necessary details to call the object operations (i.e., methods) by hiding its implementation details. It is called *abstraction* in C#. It means we need to expose what is necessary and compulsory, and we need to hide unnecessary things from the outside world. Programmatically, we can define abstraction as the process of hiding implementation details of the object’s feature and showing only the essential information of the feature to the user.   
+
+#### How to Implement Abstraction Principle in C#?
+
+Abstraction in C# can be implemented in two ways.
+1. Using Interface
+2. Using Abstract Classes and Abstract Methods
+
+Both *interface* and *abstract classes* and abstract methods provide some mechanism to hide the implementation details by only exposing the services.
+
+### Encapsulation vs Abstraction in C#
+
+1. Encapsulation => data (or information) hiding, Abstraction => detailed (implementation) hiding
+2. With the Encapsulation Principle, we group data members and member functions into a single unit called class, interface, enum, etc. On the other hand, with the Abstraction Principle, we are exposing the interface or abstract class to the user and hiding implementation details, i.e., hiding the child class information.
