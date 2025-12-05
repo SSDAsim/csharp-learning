@@ -1,0 +1,7 @@
+C:\dotnet\oop\IsA-and-HasA\HasARelationship\HasARelationship\bin\Debug\HasARelationship.exe.config
+C:\dotnet\oop\IsA-and-HasA\HasARelationship\HasARelationship\bin\Debug\HasARelationship.exe
+C:\dotnet\oop\IsA-and-HasA\HasARelationship\HasARelationship\bin\Debug\HasARelationship.pdb
+C:\dotnet\oop\IsA-and-HasA\HasARelationship\HasARelationship\obj\Debug\HasARelationship.csproj.AssemblyReference.cache
+C:\dotnet\oop\IsA-and-HasA\HasARelationship\HasARelationship\obj\Debug\HasARelationship.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\IsA-and-HasA\HasARelationship\HasARelationship\obj\Debug\HasARelationship.exe
+C:\dotnet\oop\IsA-and-HasA\HasARelationship\HasARelationship\obj\Debug\HasARelationship.pdb

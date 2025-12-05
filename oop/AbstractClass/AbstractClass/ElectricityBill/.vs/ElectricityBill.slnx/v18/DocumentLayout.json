@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\oop\\AbstractClass\\AbstractClass\\ElectricityBill\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5337034B-1B09-4E9C-8227-2A6B41CD14CE}|ElectricityBill\\ElectricityBill.csproj|c:\\dotnet\\oop\\abstractclass\\abstractclass\\electricitybill\\electricitybill\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5337034B-1B09-4E9C-8227-2A6B41CD14CE}|ElectricityBill\\ElectricityBill.csproj|solutionrelative:electricitybill\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\oop\\AbstractClass\\AbstractClass\\ElectricityBill\\ElectricityBill\\Program.cs",
+              "RelativeDocumentMoniker": "ElectricityBill\\Program.cs",
+              "ToolTip": "C:\\dotnet\\oop\\AbstractClass\\AbstractClass\\ElectricityBill\\ElectricityBill\\Program.cs",
+              "RelativeToolTip": "ElectricityBill\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T06:45:14.705Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

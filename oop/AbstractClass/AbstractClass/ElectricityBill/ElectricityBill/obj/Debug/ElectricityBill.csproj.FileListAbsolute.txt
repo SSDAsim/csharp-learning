@@ -1,0 +1,7 @@
+C:\dotnet\oop\AbstractClass\AbstractClass\ElectricityBill\ElectricityBill\bin\Debug\ElectricityBill.exe.config
+C:\dotnet\oop\AbstractClass\AbstractClass\ElectricityBill\ElectricityBill\bin\Debug\ElectricityBill.exe
+C:\dotnet\oop\AbstractClass\AbstractClass\ElectricityBill\ElectricityBill\bin\Debug\ElectricityBill.pdb
+C:\dotnet\oop\AbstractClass\AbstractClass\ElectricityBill\ElectricityBill\obj\Debug\ElectricityBill.csproj.AssemblyReference.cache
+C:\dotnet\oop\AbstractClass\AbstractClass\ElectricityBill\ElectricityBill\obj\Debug\ElectricityBill.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\AbstractClass\AbstractClass\ElectricityBill\ElectricityBill\obj\Debug\ElectricityBill.exe
+C:\dotnet\oop\AbstractClass\AbstractClass\ElectricityBill\ElectricityBill\obj\Debug\ElectricityBill.pdb

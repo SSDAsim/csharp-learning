@@ -548,3 +548,162 @@ If a child class has one immediate Parent class, call it **Single Inheritance**,
 
 1. **Implementation Inheritence:** Whenever a class is derived from another class, then it is called Implementation Inheritence. 
 2. **Interface Inheritence:** Whenever a class is derived from an interface, then it is known as Interface Inheritence.
+
+
+## IsA and HasA Relationship in C#
+
+### IsA Relationship(Inheritence)
+
+IsA relationship is achieved through *inheritence*. In an IsA relationship, the derived class is a *specialized* version of the base class.   
+#### Characteristics:
+
+- **Inheritance**: The derived class inherits properties and methods from the base class.
+- **Polymorphism**: The derived class can override or extend the functionalities of the base class.
+- **Substitutability**: Objects of the derived class can be treated as base class objects.
+
+### HasA Relationship (Composition):
+
+This relationship denotes usage or composition. This indicates that object from one class *contains* or *is composed* of objects from another class. This relationship is less tightly coupled than inheritence. 
+
+#### Characteristics:
+
+- **Composition**: A class contains or is composed of objects from another class. 
+- **Independence**: The contained object (e.g. Engine) can exist independently of the container (e.g. Car).
+- **Encapsulation**: The internal working of the contained object is usually hidden from the outside class. 
+- **Flexibility and Reusability**: Objects can be easily replaced or changed, providing more flexibility in code design.
+
+Suppose a class called Cuboid is inherited from rectangle so we can say that *Cuboid* **IsA** *Rectangle*.  
+Suppose our class *Table* has a top variable of type *Rectangle*. That means *Table* has an object of *Rectangle* class. So this is *HasA* relationship. **Table HasA Rectangle.**
+
+*Private* members are acessible only with the class, *protected* and *public* members are accessible within the derived classes (*IsA* relationship) and *public* members are accessible outside the derived classes (*HasA* relationship)   
+
+### How do you decide what to implement between IS-A and HAS-A?
+
+Ask the question yourself. For example, if I ask you the question, which statement gives you more sense from the two statements below?
+```
+Employee IS-A Address
+Employee HAS-A Address
+```
+
+Then definitely, you will tell Employee HAS-A Address gives more sense than Employee IS-A Address. If I ask you, which statement gives you a better sense of the two statements?
+```
+BMW IS-A Car
+BMW HAS-A Car
+```
+Then, your answer will be definitely BMW IS-A Car.   
+**Note:** In C#, the *IS-A relationship* is implemented using **Inheritance**, and the *HAS-A relationship* is implemented using **Composition**, i.e., declaring a variable. So, whenever we declare a variable of one class inside another class, we call it a Composition, or you can say HAS-A relationship.
+
+## Generalization and Specialization
+
+### Specialization
+Suppose Rectangle is a class and Cuboid class is inherited from it. Now, does *Rectangle* exists? Of course, it does. So, in specialization, the parent is existing and the child is defined later. 
+
+### Generalization
+In generalization, the child class was existing then we define the base class. Suppose *Car* is a general class. Does Car exists? No it does not. It is just a virtual term. Does its child (INNOVA, BMW) exist? They do. So a *Car* is just a term and not an actual thing.     
+
+In *specialization*, the base class has something to give to the child class whereas, in *generalization*, the base class doesn’t have anything to give to their child classes. Just their purpose is to group them together so that we can easily manage all those things.
+
+**Note:** Both generalization and specialization achieve using only *inheritance*. So, specialization is a top-down approach and generalization is a bottom-up approach.
+
+**Purpose:** The purpose of generalization is *Polymorphism* while the purpose of specialization is *to share its features* with its child classes.
+
+## Abstract Classes and Abstract Methods in C# 
+
+### Abstract Methods in C#
+
+- In C#, *abstract methods* are declared within an abstract class or interface. 
+- They do not have any function body or implementation at the time of declaration
+- the responsibility for implementing the function is delegated to concrete(non-abstract) classes that derive from that abstract class or interface. 
+
+```csharp
+// you should explicitly use the abstract modifier in order to declare an abstract method.
+public abstract void Add(int num1, int num2);
+```
+
+### Abstract Classes in C#
+
+- Abstract classes serve as a blueprint for other classes. 
+- Abstract class can not be instantiated directly, but they can serve as a base class to derive child classes from them. 
+- We must define the abstract method within the abstract only and we can not just define them anywhere. 
+- it imposes some restrictions on the Child classes. And children or Child classes have to follow or fulfill those restrictions. And that is the basic idea of abstract class in C#
+- every abstract method declared in abstract must and should be implemented by Child class successfully, otherwise we will get a compile-time error.
+- Abstract class can contain non-abstract methods.
+- non-abstract class => non-abstract methods
+- abstract class => abstract + non-abstract methods
+- To consume the non-abstract methods of the abstract parent class, the child class must first implement all the abstract methods of the abstract parent class.
+- The abstract class does not have any static members. If there are any static members, you can call them directly using the class name. But, for calling non-static members, we need an instance..
+- An abstract class may or may not have abstract methods. But if a class contains an abstract method then it must be declared as abstract.
+```csharp
+public abstract class Calculator {
+    public abstract void Add(int num1, int num2);
+}
+```
+### Why Abstract Class Cannot Be Instantiated in C#?
+
+Its abstract methods cannot be executed because it is not a fully implemented class. If the compiler allows us to create the object for an abstract class, we can invoke the abstract method using that object, which CLR cannot execute at runtime. Hence, to restrict calling abstract methods, the compiler does not allow us to instantiate an abstract class.
+
+#### Implementing Abstract Methods in Child Class
+
+```csharp
+public class AbsChild : AbsParent
+{
+    public override void Mul(int x, int y)
+    {
+        Console.WriteLine($"Multiplication of {x} and {y} is : {x * y}");
+    }
+    public override void Div(int x, int y)
+    {
+        Console.WriteLine($"Division of {x} and {y} is : {x / y}");
+    }
+}
+
+// this is how we implement abstract methods from parent class in child class. Note the 'override' keyword.
+// Now child can consume the non-abstract methods of the parent
+```
+
+### Abstract Classes and Abstract Methods Interview Questions
+
+#### Can we Create a Reference for the Abstract Class in C#?
+Yes we can create a reference for the abstract class in C# and make it hold the instance of the child class. 
+
+```csharp
+    // child class instance
+    AbsChild absChild = new AbsChild();
+    // creating parent class reference and holding child class instance
+    AbsParent absPar = absChild;
+```
+
+**Note:** The parent class references can also call the child class overridden members but cannot call the pure child class members.
+
+#### When to use Abstract classes and Methods in C#?
+
+- **Common Base:** When you have several classes with common properties and methods.
+- **Enforce a Contract:** Enforce a contract to which the derived classes must adhere. 
+- **Flexibility:** Abstract class can contain abstract as well as concrete methods. Giving dervied classes the flexibility to implement parent class methods or override them with their specific implementation.
+- **Implement Polymorphism:** You can create a collection of objects of different derived classes but treat them uniformly through the abstract base class or interface.
+
+#### Why should the method have an abstract keyword if it does not have a body in C#?
+
+In a class, we are allowed only to define a method with the body. Since we are changing its default behavior (which means removing its body) it must have the abstract keyword in its prototype.
+
+#### When Should a Class be Declared as Abstract in C#?
+
+1. If the class has any abstract methods, then we need to declare the class as abstract.
+2. If the child does not provide implementation to any of the parent abstract methods, then again, the child class needs to be declared as an abstract class.
+3. If the child class does not provide implementation to any of the methods of an interface, then the child class needs to be declared as an abstract class as well as needs to declare the method as abstract. By default, Interface Methods are public and abstract.
+
+#### Will abstract class members be created when a subclass object is created?
+
+Yes, its non-static members get memory when its concrete sub-class object is created.
+
+#### Can we Declare an Abstract Method as Static in C#?
+
+No, we are not allowed to declare an abstract method as static in C#. It leads to Compile Time Error. If the compiler allows us to declare it as static, it can be invoked directly using the class name which cannot be executed by CLR at runtime.
+
+#### Can we Declare an Abstract Method as Sealed/Private in C#?
+
+No because it has to overridden in the child classes. If we will try to use sealed then we will get a Compile Time Error. 
+
+#### Can we Declare a Concrete Class as Abstract in C#?
+
+We can define an abstract class with only non-abstract methods. Defining a class as abstract is a way of preventing someone from instantiating a class that is supposed to be extended first.
