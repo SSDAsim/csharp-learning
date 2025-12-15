@@ -339,7 +339,7 @@ This problem can be overcome by using something called the Finalized Dispose pat
 
 ### Finalize Method in C#:
 
-- **Purpose:** used for clean up opertions before an object is garbage collected. It's typically overridden to release the unmanaged resources that the object holds. GC calls Finalize method automatically.
+- **Purpose:** used for clean up operations before an object is garbage collected. It's typically overridden to release the unmanaged resources that the object holds. GC calls Finalize method automatically.
 - Finalize is inherited from *Object* class. It should always call the Finalize method of the base if overridden to ensure that all resources are released properly. 
 
 ### Dispose Method:
@@ -707,3 +707,71 @@ No because it has to overridden in the child classes. If we will try to use seal
 #### Can we Declare a Concrete Class as Abstract in C#?
 
 We can define an abstract class with only non-abstract methods. Defining a class as abstract is a way of preventing someone from instantiating a class that is supposed to be extended first.
+
+
+## What is an Interface in C#?
+
+- It defines a contract or set of rules, a class must adhere to. 
+- It specifies a list of methods, properties, events or indexes a class implementing the interface must provide. 
+- Interfaces allow you to define a common set of functionality that multiple classes can share.
+- Like class, interface is also a user-defined datatype.
+- If a class has an interface as a Parent, then class is responsible for implementing all the abstract methods of the interface.
+- A class can inherit from a class and interface(s) at a time.
+
+### Differences Between Concrete Class, Abstract Class, and Interface in C#:
+
+- **Concrete class** contains only Non-Abstract Methods
+- **Abstract class** contains non-abstract as well as concrete methods.
+- **Interface** contains only abstract methods.
+
+**Note:** Every abstract method of an interface should be implemented by the child class of the interface without fail (Mandatory).
+
+### How to Define an Interface in C#?
+
+```csharp
+interface ITestInterface
+{
+    //....abstract members declarations
+
+    // in case of abstract class 
+    public abstract void Add(int num1, int num2);
+
+    // but in case of interface 
+    // by default this method is abstract and public
+    void Add(int num1, int num2);
+}
+```
+
+### Rules while working with the Interfaces:
+
+- default scope for interface members is *public*. which is private in case of *class*
+- by default, every member of an interface is *abstract*
+- we can not declare fields/variables, constructors, destructors in interfaces.
+- An interface can inherit from another interface. 
+- every member of interface must be implemented successfully in the child class with modifier public and we do not need the 'override' keyword as we do in case of class.
+- we can not create an instance of the interface but we can create a reference of an interface. The interface reference will hold the child class instance. We can only invoke the methods declared in the interface using the interface reference.
+
+### What are the Members we can and can’t define in an interface in C#?
+
+An interface can contain:
+
+1. Abstract methods
+2. Properties
+3. Indexes
+4. Events
+
+An interface cannot contain:
+1. Non-abstract functions
+2. Data fields
+3. Constructors
+4. Destructors
+
+### When to use Interface in C#?
+
+- **Defining a Common Contract**: To ensure that multiple classes provide a common set of methods, properties, events, or indexers.
+- **Implement Multiple Inheritence:** C# does not support multiple inheritence but it does support *multiple interface inheritence*.
+- **Enforce a specific structure**
+- **Implement Polymorphism:** 
+- **Testing and Mocking:** Interfaces are valuable in unit testing scenarios. You can create interfaces for external dependencies or services and then create mock implementations of those interfaces for testing purposes. This enables you to isolate and test individual components of your codebase more effectively.
+- **Collaboration in Teams:** Interfaces can help teams collaborate more effectively on large codebases. By defining clear interfaces, developers can work independently on different parts of a project, knowing that their code will integrate seamlessly as long as it adheres to the specified interfaces.
+- **Dependency Injection:** When using dependency injection, interfaces often define dependencies that can be injected into classes. This helps achieve loose coupling and makes it easier to switch implementations at runtime.
