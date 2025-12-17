@@ -1036,3 +1036,146 @@ public class Complex
     }
 }
 ```
+
+## What is Method Overriding in C#?
+
+Method overriding is an approach to implement Run-time Polymorphism. The process of implementing the super class non-static, non-private, and non-sealed method in the subclass with the **same signature** is called **Method Overriding**. Same signature means the name and the paramters (type, number and order of paramteres) should be the same.    
+
+The reason of the method overriding could be that the Parent Class method is not fulfilling the logic of the child class method. Then the sub-class overrided the parent class method with requried business logic. Usually, in most real-time applications, the Parent Class methods are implemented with generic logic which is common for all the next-level sub-classes. The subclass method is treated as the overriding method and the superclass method is treated as the overridden method.
+
+### How can we Override a Parent Class Method under Child Class in C#?
+
+- method in the parent must be declard as *virtual* using the virtual keyword. Declaring method virtual means making it available to be overridden. 
+- child class overrides the parent class method using *override* modifier. (overriding parent class method is not mandatory
+
+```csharp
+public class Class1{
+    // virtual function (overridable)
+    public virtual void Show(){
+        //..some generic logic
+    } 
+}
+
+public class Class2 : Class1{
+    // overriding parent class method is optional
+    public override void Show(){
+        //..child specific implementation
+    } 
+}
+
+class Program {
+    static void Main(string args[]){
+        Class1 obj1 = new Class2();
+        obj1.Show(); // this will execute the child class Show()
+
+        Class2 obj2 = new Class2();
+        obj2.Show(); // this will also execute the child class Show()
+    }
+}
+```
+
+Super class reference variable can hold the subclass object reference but the reverse is not possible i.e. child class reference variable can never hold the super class object reference. (cause child will have all the parent methods but the parent may not have all the methods of the child).
+
+```csharp 
+Parent obj1 = new Child();
+
+// obj1 => reference variable type = Parent
+// obj1 => reference to object whose type = Child
+
+// Compilation => Compiler will check the reference variable type
+// Runtime => CLR will check the Object Type 
+
+```
+
+- At Compilation time: the compiler will check the *type of the reference variable* and will check if that method or function is available in that type or not. If available then compilation will be done successfully and if not available then compilation will fail and you will get a compilation error.  In our example, the Show method is available in Class1 (type of the reference variable obj1) and hence compilation is successful.
+- At the time of program execution, *CLR* will check the object type (i.e. Child in our case) and is going to execute the method from that reference *object type*. If the method is not available in corresponding object type, it will try to execute the method from the Parent class of the object.  In our case, the Show method is available in the class Class2 and hence this method is going to be executed from the class Class2.
+
+### What is Dynamic Polymorphism or Runtime Polymorphism?
+
+The function call is bounded to the class at the time of compilation, if the function is going to be executed by CLR from a different class at run-time rather than the class bounded at compilation-time, then it is called **Run-Time Polymorphism** in C#. In this case, we will be able to know at runtime from which class the method is going to be executed.   
+It is also called *Dynamic Polymorphism* or *Late Binding* as at Run-time we will be able to know from which class the method is going to be executed.
+
+### What is Static Polymorphism or Compile Time Polymorphism?
+
+The function call is bounded to the class at the time of compilation, if the function is going to be executed from the same bounded class at run-time, then it is called Compile-Time Polymorphism in C#. This happens in the case of Method Overloading because, in the case of overloading each method will have a different signature and based on the method call, we can easily recognize the method which matches the method signature.
+
+It is also called *Static Polymorphism* or *Early Binding* as at the Compilation time we will be able to know from which class the method going to be executed.
+
+### What if Parent Class virtual method is not overridden in Child Class?
+
+Suppose, a child class does not override parent class method but still calls it, then what is going to happen? 
+- Compiler at compile time will look to bind the method call with the method definition. if method is not found in child class it will look in the parent class. If found in parent class then compilation is successfull. 
+- At execution time, CLR will try to execute the method from the child class. If not found in child class, the CLR will go to the parent class and tries to execute method from there. 
+
+### How can we execute the superclass method if it is overridden in the sub-class in C#?
+
+Once we re-implement the parent class methods under the child classes, then the object of the child class calls its own method but not its parent class method. But if you want to still consume or call the parent class’s methods from the child class, then it can be done in two different ways.
+
+- By creating the parent class object under the child class, we can call the parent class methods from the child class, or 
+
+```csharp 
+class Class1
+{
+    public virtual void Show()
+    {
+        Console.WriteLine("Parent Class Show Method");
+    }
+}
+class Class2 : Class1
+{
+    public override void Show()
+    {
+        //Creating an instance of Parent Class
+        Class1 class1 = new Class1();
+        //Calling Parent Class Show method
+        class1.Show(); 
+        Console.WriteLine("Child Class Show Method");
+    }
+}
+```
+- by using the base keyword, we can call parent class methods from the child class, but this and the base keyword cannot be used under the static block.
+
+```csharp 
+class Class1
+{
+    //Virtual Function (Overridable Method)
+    public virtual void Show()
+    {
+        //Parent Class Logic Same for All Child Classes
+        Console.WriteLine("Parent Class Show Method");
+    }
+}
+class Class2 : Class1
+{
+    //Overriding Method
+    public override void Show()
+    {
+        base.Show(); //Calling Parent Class Show method
+        Console.WriteLine("Child Class Show Method");
+    }
+}
+```
+
+
+### What is the difference between Method Overloading and Method Overriding in C#?
+
+#### Method Overloading in C#
+
+1. It is an approach to defining multiple methods with the same name but with a different signature means by changing the number, type, and order of parameters.
+2. Overloading a method can be performed within a class as well as between the Parent-Child classes also.
+3. To overload a parent class method under the child classes, the child class does not require to take any permission from the parent.
+4. This is all about defining multiple behaviors to a method.
+5. Used to implement static polymorphism.
+6. No separate keywords are used to implement function overloading.
+
+#### Method Overriding in C#
+
+1. It is an approach to defining multiple methods with the same name and with the same signature means the same number, type, and order of parameters.
+2. Overriding of methods is not possible within the same class it must be performed under the child classes only.
+3. To override a parent class method under the child classes, first, the child class requires to take permission from its parent.
+4. This is all about changing the behavior of a method.
+5. Used to implement dynamic polymorphism.
+6. Use the virtual keyword for the base class function and override keyword in the derived class function to implement function overriding.
+
+**Note:** Since the Show() method is declared as virtual, the call uses dynamic dispatch (runtime polymorphism). At compile time, the compiler only knows the static type of the reference (for example, A) and cannot determine whether it refers to an instance of A or a derived class such as B. Therefore, the actual implementation of Show() is selected at runtime based on the object’s runtime type.
+
