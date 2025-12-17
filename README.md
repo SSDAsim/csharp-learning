@@ -775,3 +775,104 @@ An interface cannot contain:
 - **Testing and Mocking:** Interfaces are valuable in unit testing scenarios. You can create interfaces for external dependencies or services and then create mock implementations of those interfaces for testing purposes. This enables you to isolate and test individual components of your codebase more effectively.
 - **Collaboration in Teams:** Interfaces can help teams collaborate more effectively on large codebases. By defining clear interfaces, developers can work independently on different parts of a project, knowing that their code will integrate seamlessly as long as it adheres to the specified interfaces.
 - **Dependency Injection:** When using dependency injection, interfaces often define dependencies that can be injected into classes. This helps achieve loose coupling and makes it easier to switch implementations at runtime.
+
+## Multiple Inheritence 
+
+### Why Multiple Inheritance Not Supported Through Classes in C#?
+
+Multiple Inheritence is not supported cause it causes **Ambiguity Problem** . Consider if a class has two methods with the same signature. When you call any of them, the compiler will gets confused to call which one. Consider the following code
+
+```csharp
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        Class3 obj = new Class3();
+        obj.Test();
+        // compiler will through error : The call is ambiguous between the following methods or properties: ‘Class3.Test()’ and ‘Class3.Test()’ 
+    }
+}
+
+class Class3{
+    public void Test() {}
+    public void Test() {}
+}
+```
+
+If a class is inherited from more than one parent, and the parents have a method with same signature then we will face same *ambiguity problem*. 
+
+```csharp
+
+public Class1{
+    public void Test(){}
+}
+
+public Class2{
+    public void Test(){}
+}
+
+public Class3: Class1, Class2{
+    public void Test() {}
+    // this will cause compile time error cause of ambiguity problem.
+}
+
+```
+
+While in case of **Interfaces**, there is no implementation of the method. so class inherting form the interfaces will have its own implementation of the method, that is why there is no ambiguity problem in case of multiple inheritence by Interfaces.
+
+```csharp 
+
+public interface Interface1{
+    void Test();
+}
+
+public interface Interface2{
+    void Test();
+}
+
+public class MultipleInheritenceTest : Interface1, Interface2{
+    // since both interface do not know about each other, each interface will think that this Test() is implementation of the Test() declared in interface.
+    public void Test()
+    {
+        Console.WriteLine("Test Method is Implemented in Child Class");
+    }
+}
+
+```
+
+### If a class inherits an interface, what are the 2 options available for that class?
+
+**Option 01**: Provide implementation for all the members inherited from the interface. 
+**Option 02**: If class does not wish to provide implementation . 
+
+
+## Multiple Inheritence Real Time Example
+
+**Multiple inheritence**: inheriting from  more than one parent.   
+Suppose we have a printer interface which has four methods. Now, We have two classes that will implement this interface. One of these two classes want all four methods of the interface but the other class wants only two of the four methods. Now, the class which want only two methods will have to implement all four methods (two other methods as well) which is not a good thing. So, what we can do is split our main iterface into two or three interfaces. Main one will have two methods and other methods are split into single method interfaces. 
+
+
+```csharp
+
+public interface IPrinterTasks {
+    void Print(string PrintContent);
+    void Scand(string ScanContent);
+}
+
+public interface IFaxTasks {
+    void Fax(string content);
+}
+
+public interface IDuplexTask {
+    void PrintDuplex(sting content);
+}
+
+// now using multiple inheritence the class can implement whichever interface it wants 
+public class HPLaserJetPrinter : IPrinterTasks, IFaxTasks, IPrintDuplexTasks {
+    //......
+}
+
+class LiquidInkjetPrinter : IPrinterTasks {
+    //....
+}
+```

@@ -1,0 +1,7 @@
+C:\dotnet\oop\MultipleInheritence\MultipleInheritence\bin\Debug\MultipleInheritence.exe.config
+C:\dotnet\oop\MultipleInheritence\MultipleInheritence\bin\Debug\MultipleInheritence.exe
+C:\dotnet\oop\MultipleInheritence\MultipleInheritence\bin\Debug\MultipleInheritence.pdb
+C:\dotnet\oop\MultipleInheritence\MultipleInheritence\obj\Debug\MultipleInheritence.csproj.AssemblyReference.cache
+C:\dotnet\oop\MultipleInheritence\MultipleInheritence\obj\Debug\MultipleInheritence.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\MultipleInheritence\MultipleInheritence\obj\Debug\MultipleInheritence.exe
+C:\dotnet\oop\MultipleInheritence\MultipleInheritence\obj\Debug\MultipleInheritence.pdb

@@ -1,0 +1,7 @@
+C:\dotnet\interface\BankApplication\BankApplication\bin\Debug\BankApplication.exe.config
+C:\dotnet\interface\BankApplication\BankApplication\bin\Debug\BankApplication.exe
+C:\dotnet\interface\BankApplication\BankApplication\bin\Debug\BankApplication.pdb
+C:\dotnet\interface\BankApplication\BankApplication\obj\Debug\BankApplication.csproj.AssemblyReference.cache
+C:\dotnet\interface\BankApplication\BankApplication\obj\Debug\BankApplication.csproj.CoreCompileInputs.cache
+C:\dotnet\interface\BankApplication\BankApplication\obj\Debug\BankApplication.exe
+C:\dotnet\interface\BankApplication\BankApplication\obj\Debug\BankApplication.pdb
