@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\oop\\OperatorOverloading\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEEE6C3-F324-410F-9AFE-D37D33D48314}|OperatorOverloading\\OperatorOverloading.csproj|c:\\dotnet\\oop\\operatoroverloading\\operatoroverloading\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEEE6C3-F324-410F-9AFE-D37D33D48314}|OperatorOverloading\\OperatorOverloading.csproj|solutionrelative:operatoroverloading\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\oop\\OperatorOverloading\\OperatorOverloading\\Program.cs",
+              "RelativeDocumentMoniker": "OperatorOverloading\\Program.cs",
+              "ToolTip": "C:\\dotnet\\oop\\OperatorOverloading\\OperatorOverloading\\Program.cs",
+              "RelativeToolTip": "OperatorOverloading\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T09:54:17.68Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

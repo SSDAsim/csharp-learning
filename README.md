@@ -876,3 +876,163 @@ class LiquidInkjetPrinter : IPrinterTasks {
     //....
 }
 ```
+
+## What is Polymorphism in C#?
+
+Polymorphisms mean existance of something in more than one form. In the programming world, these things can be operators or functions.    
+Polymorphism is a concept by which we can perform a single task in different ways. That is, when a single entity behaves differently in different cases, it is called polymorphism in C#. The term polymorphism is an object-oriented programming term that means a function or an operator behaves differently in different scenarios.    
+
+Technically, we can say that when a function shows different behaviors when we pass different types and numbers of input values, then it is called Polymorphism in C#.   
+
+
+### Types of Polymorphism 
+
+1. Static Polymorphism / Compile Time Polymorphism / Early Binding 
+- Method Overloading 
+- Opertor Overloading
+- Method Hiding
+2. Dynamic Polymorphism / Run Time Polymorphism / Late Binding 
+- Method Overriding
+
+### Compile Time Polymorphism 
+
+The function call is bounded to the class at the time of compilation; if the function is going to be executed from the same bounded class at run-time, then it is *Compile Time Polymorphism*. This happens in the case of Method Overloading because, in this case, each method will have a different signature, and based on the method call, we can easily recognize the method that matches the method signature.    
+
+In Static Polymorphism, the behavior of a method is decided at compile time. That means the C# compiler binds the method call with method method definition/body during the compilation only. Therefore it is called **Compile Time Polymorhpism**.     
+
+As the binding (link between method call and method definition) is perfromed at compile time, it is known as **Early Binding**.
+
+### Run Time Polymorphism 
+
+- Behavior of method is decided at run-time. 
+- Common Language Runtime (CLR) binds the method call with the method body at runtime and invokes the relevant method during the runtime when method is called. 
+- the function call is bounded to the class at the time of compilation, if the function is going to be executed from the other class rather than the class bounded at the time of compilation, then it is called **Run-Time Polymorphism**. 
+- happens in the case of *Method Overriding*, in this case we have multiple methods with same signature i.e. Parent Class and the Child Class have the same method implementation. So, in this case, we will be able to know at runtime from which class the method is going to be executed. 
+- It is also called **Dynamic Polymorphism** or **Late Binding**.
+
+```csharp 
+using System;
+namespace PolymorphismDemo
+{
+    class Class1
+    {
+        //Virtual Function (Overridable Method)
+        public virtual void Show()
+        {
+            //Parent Class Logic Same for All Child Classes
+            Console.WriteLine("Parent Class Show Method");
+        }
+    }
+    class Class2 : Class1
+    {
+        //Overriding Method
+        public override void Show()
+        {
+            //Child Class Reimplementing the Logic
+            Console.WriteLine("Child Class Show Method");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Class1 obj1 = new Class2();
+            obj1.Show(); //Resolve at Runtime
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+// we have same implementation of Show() in both parent and child. we are creating an instance of the child class and storing it in the reference of the parent class. In this case, from which Class the Show() is going to be executed will be decided at run-time only. 
+```
+
+#### Method HIDING
+
+Method hiding happens when a derived class defines a method with the same name as a base class method using the new keyword. In method HIDING a base class reference variable pointing to a child class object will invoke the hidden method in the BASE class. Then method hiding is compile-time polymorphism.    
+
+Runtime polymorphism in C# uses virtual, override, and dynamic dispatch in method definiton by the child.
+
+## What is Method Overloading or Function Overloading in C#?
+
+Approach to defining multiple functions under a class with a single name. However, the parameters of all those methods should be different (different in terms of number, type, and order of the parameters).    
+
+If we are defining multiple methods with the same name but with a different signature in a class or in the Parent and Child Classes, then it is called Method Overloading in C#. That means C#.NET not only allows method overloading in the same class but also allows method overloading in Parent and Child classes.   
+
+The **signature** of a method consists of the name of the method and the data type, number, order, and kind (Value, Ref or Out) of parameters. Signature of a method **does not** include the *return type* and the *params modifiers*. So it is not possible to overload a method just based on the return type and params modifier.
+
+### Why Return Type is not considered as part of Method Overloading in C#?
+
+The return types come into the picture at the end of the method execution.But here, the confusion is not at the end of the method execution, but the confusion is about where to start, and which method to invoke.So, the compiler does not have any clarity to start the method execution, and talking about the end of the method execution does not make any sense. So, this is the reason why return type is never taken into consideration while defining method overloading in C#.   
+
+### When is a method considered an overloaded method in C#?
+
+The rule we should check is both methods must have different parameter Types/Numbers/Orders. But there is no rule on return type, access specifier and access modifier means overloading methods can have their own return type (void, float, int, string, etc), own access specifier (public, private, protected, etc.), and access modifier (sealed, static, virtual, etc.) because overloading methods are different methods.
+
+### Can we Overload Methods in the Same Class?
+
+Yes, it is possible. No Compile Time Error, and No Runtime Error. Methods can be overloaded in the same or in super and sub classes because overloaded methods are different methods. But we can’t override a method in the same class it leads to Compile Time Error: “Method is Already Defined” because **overriding methods** are the *same methods with a different implementation*.
+
+## Operator Overloading in C#
+
+It's a type of polymorhpism in which an operator is overloaded to give it user-defined methods. By overloading the operators, we can give additional meaning to the operators like +-*/=.,= etc.   
+
+In C#, it is possible to make operators work with user-defined data types like classes. That means the C# has an ability to provide the operator with a special meaning for a data type. For example, we can overload the + operator in a class like String so that we can concatenate two strings by just using +.    
+
+### The syntax for C# Operator Overloading:
+
+```csharp 
+public static return_type operator + (Type t)
+{
+    // Statements
+}
+// where type must be struct or class
+```
+
+1. The return type is the return type of the function.
+2. the operator is a keyword.
+3. Op is the symbol of the operator that we want to overload. Like: +, <, -, ++, etc.
+4. The type must be a class or struct. It can also have more parameters.
+5. It should be a static function.
+
+```csharp 
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        Complex C1 = new Complex(1, 2);
+        Complex C2 = new Complex(3, 4);
+        //Complex C3 = Complex.Add(C1, C2);
+        Complex C3 = C1 + C2;
+        C3.Display();
+
+        Console.ReadKey();
+    }
+}
+
+public class Complex
+{
+    private int real;
+    private int img;
+    public Complex(int r = 0, int i = 0)
+    {
+        real = r;
+        img = i;
+    }
+
+    // operator overloading 
+    //public static Complex Add(Complex a, Complex b)
+    public static Complex operator +(Complex a, Complex b)
+    {
+        Complex temp = new Complex();
+        temp.real = a.real + b.real;
+        temp.img = a.img + b.img;
+        return temp;
+    }
+
+    public void Display()
+    {
+        Console.WriteLine($"{real} + i{img}");
+    }
+}
+```
