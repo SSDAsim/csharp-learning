@@ -1274,3 +1274,78 @@ public partial class PartialEmployee {
 - Partial Method declaration and definition must be different. It may be in the same class but you can not declare and implement a partial method at once. You need to declare it and the implement it somewhere else (maybe in same part of the class or maybe in other part of the class)
 - Partial Method signature should match it's implementation (name of the method, type, name, number and order of parameters). Also with same access modifier.
 - By default, partial methods are private. 
+- If no implementation found for a partial method, the compiler will remove the function signature during the compilation.
+- The return type of the Partial method must be *void*.
+
+## Sealed Class in C#
+
+A class which can not be inherited by other class(es) is called a *Sealed Class*. ```sealed class Class1 { } ```. 
+
+### Points to Remember
+
+- Sealed class is completely opposite of abstract class. 
+- It can not contain any abstract method. 
+- It is specially used to avoid further inheritance. 
+- The keyword sealed can be used with classes, instance methods, and properties.
+- A sealed class should be the *bottom-most* class in the inheritance hierarchy. 
+- Even if a sealed class can not be inherited, we can still consume the class members from any other class by creating object of that class. 
+
+### Sealed Class in C#
+
+Every method in parent class is by default a sealed method unless you declare it with *virtual* keyword. Because with *virtual* keyword, the method becomaes overridable.    
+
+Make an overridden method as sealed to stop it from further overriding:
+```csharp
+namespace SealedDemo
+{
+    class Parent
+    {
+        public virtual void Show() { }
+    }
+    class Child : Parent
+    {
+        public sealed override void Show() { }
+    }
+    class GrandChild : Child
+    {
+        //'GrandChild.Show()': cannot override inherited member 'Child.Show()' because it is sealed
+        public override void Show() { }
+    }
+}
+```
+
+### Points to remember 
+
+- Every method by default is sealed hence they can not be overridden under the child class. 
+- If you declare a method as *virtual* in parent class then it can be overridden in child as well as in grandchild classes. 
+- If you want to restrict the method, not to be overridden under the grandchild classes, then you need to make it sealed in the child class (as seen in the above code).
+- If you want to declare a method as sealed, then it has to be declared *virtual* in base class.  
+- In Inheritance, the sealed class is the bottom-most class because from this class no more inheritance is possible.
+
+### When should a method be declared as sealed in C#?
+
+If we don’t allow subclasses to override the superclass method and ensure that all sub-classes use the same superclass method logic then that method should be declared as sealed.
+
+### What is the difference between the private and sealed methods in C#?
+
+- The private method is not inherited while sealed method is inherited but cannot be overridden. 
+- A private method cannot be called form the sub-class while a sealed method can be called from sub-classes.
+- The same private method can be defined in sub-class and it does not lead to error.
+
+### What are the differences between an abstract class and a sealed class in C#?
+
+#### Abstract Class in C#:
+1. A class that contains one or more abstract methods is known as an abstract class.
+2. The abstract class can contain abstract and non-abstract methods.
+3. Creating a new class from an abstract class is compulsory to consume the abstract class non-abstract members.
+4. An abstract class cannot be instantiated directly; we need to create the object for its child classes to consume an abstract class.
+5. We need to use the keyword abstract to make any class abstract.
+6. An abstract class cannot be the bottom-most class within the inheritance hierarchy.
+
+#### Sealed Class in C#:
+1. A class from which it is not possible to derive a new class is known as a sealed class.
+2. The sealed class can contain non-abstract methods; it cannot contain abstract and virtual methods.
+3. It is not possible to create a new class from a sealed class.
+4. We should create an object for a sealed class to consume its members.
+5. We need to use the keyword sealed to make any class sealed.
+7. The sealed class should be the bottom-most class within the inheritance hierarchy.
