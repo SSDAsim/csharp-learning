@@ -1179,3 +1179,59 @@ class Class2 : Class1
 
 **Note:** Since the Show() method is declared as virtual, the call uses dynamic dispatch (runtime polymorphism). At compile time, the compiler only knows the static type of the reference (for example, A) and cannot determine whether it refers to an instance of A or a derived class such as B. Therefore, the actual implementation of Show() is selected at runtime based on the object’s runtime type.
 
+## Method Hiding/Shadowing 
+
+It is an approach to re-implement parent class methods in child classes without the Parent's permission.   
+
+There are two ways to re-implement parent class methods in child class:
+1. Method Overriding 
+- overridden method in parent class is defined using *virtual* keyword. 
+- overriding method in child class is defined using the *override* modifier. 
+- Parent knows about the child's overriding method. 
+
+2. Method Hiding 
+- there is no need to define the method in parent as virtual. 
+- re-implemented method in child should be defined using *new* keyword. If not defined using *new*, the compiler will give you a warning to confirm that you know that a method with the same signature exists in parent and you are intentionally hiding this method.
+- Parent's permission is not taken so Parent does not know about the re-implementation method in the child.   
+
+```csharp 
+public class Parent {
+    // overridden method
+    public virtual void Show(){
+        //....Parent Show()
+    }
+
+    public void Display(){
+        //...Parent Display
+    }  
+}
+
+public class Child : Parent {
+    // overriding method 
+    public override void Show(){
+        //...Child Show()
+    }
+
+    // Method Hiding/Shadowing
+    public new void Display() {
+        //...Child Display()
+    }
+}
+```
+
+Now consider a scenario, a Parent class reference is holding a child class instance. And you call both method, then from which class the method will be executed. 
+
+```csharp
+class Program {
+    static void Main(string[] args){
+        Parent obj = new Child();
+        obj.Show(); 
+        // this will execute the child class method cause it was overridden by the child and parent knows about this 
+
+        obj.Display();
+        // this will execute the Parent class method cause parent reference variable does not know about the Display() implementation in Child class.
+    }
+}
+```
+
+So, if a Parent class reference variable is created using the Child class object reference, then using that Parent reference we can call the Child class overriding methods but we cannot call the child class hiding methods.
