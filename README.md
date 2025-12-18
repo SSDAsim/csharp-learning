@@ -1429,3 +1429,176 @@ namespace ExtensionMethod
 5. A static class contains only a static constructor whereas a non-static class contains can both static and instance constructors.
 6. Static classes are sealed and hence cannot inherit from another class. On the other hand, the non-static class can be inherited by another class.
 
+## Differences Between Variable, Reference, and Instance of a Class in C#
+
+### Differences Between Variable, Reference, and Instance of a Class in C#
+
+- **Variable of a Class**: A copy of the class that is not initialized.
+- **Instance of a Class:** A copy of the class that is initialized by using the new keyword which has its own memory and is never shared with another instance.
+- **Reference of a Class:** A copy of a class that is initialized by using an existing instance and references of a class will not have any memory allocation, they will be sharing the memory of the same instance that is assigned for initializing the variable.
+
+
+
+## Exception Handling in C#
+
+Run-time errors are not Exceptions. Exceptions are the classes that are responsible for the abnormal termination of the program when runtime errors occur. Objects of Exception classes are responsible for abnormal termination of the program whenever runtime errors occur.
+
+These exception classes are predefined under **BCL (Base Class Libraries)**, where a separate class is provided for every different type of exception, like
+
+1. IndexOutOfRangeException
+2. FormatException
+3. NullReferenceException
+4. DivideByZeroException
+5. FileNotFoundException
+6. SQLException,
+7. OverFlowException, etc.
+
+*Note:* Exception class is the superclass of all the exception classes.
+
+### When a runtime error occurs in the program:
+
+- Exception Manager under Common Language Runtime identifies the type of the error occurred
+- Exception Manager creates an object of the Exception class related to that error and throws that object. 
+- program execution will be terminated at the line where the error occured and an error message will be displayed.
+
+#### What is the Procedure to Handle Exceptions in C#?
+The Exception Handling in C# is a four steps procedure
+
+1. Preparing the exception object that is appropriate to the current logical mistake.
+2. Throwing that exception to the appropriate exception handler.
+3. Catching that exception
+4. Taking necessary actions against that exception
+
+### How can we handle an Exception in .NET?
+There are two methods to handle the exception in .NET
+
+1. Logical Implementation (priority)
+2. Try Catch Implementation (second choice) => try catch finally
+
+- if no exception occurs => try block code
+- if an exception has occured => catch block code
+- Code in the **finally** block is always going to be executed no matter if any exception has occured or not. 
+
+```csharp 
+try{
+
+} catch (SomeExceptionOne one) {
+
+} catch (SomeExceptionTwo two) {
+
+} catch (Exception ex)
+{
+    Console.WriteLine($"Message: {ex.Message}");
+    Console.WriteLine($"Source: {ex.Source}");
+    Console.WriteLine($"HelpLink: {ex.HelpLink}");
+    Console.WriteLine($"StackTrace: {ex.StackTrace}");
+} finally {
+    //... going to be executed in any case
+}
+
+// only one catch block is going to be implemented
+
+// generic catch block should be at the last
+// If a matching catch block is not found, the generic catch block will execute to handle the abnormal termination.
+// exception is a superclass so it will handle all type of exceptions occurred in try block, using this we can print different exception properties
+
+// we can skip the catch block and just do 
+try {
+
+} finally {
+
+}
+```
+
+### Keep in mind:
+
+The Exception superclass handles all exceptions thrown from the corresponding try block in the above example. However, using the super Exception class when a relevant child exception class is available hurts maintainability, debugging, and correct error handling.
+
+
+### Why do we need finally block in the Real-Time Project Development?
+
+As per the best practices, inside the *finally* block there must resource releasing logic (unreferencing the objects created inside try block) or clean up the code. 
+
+
+## How to Create Custom Exceptions in C#
+
+### Types of Exceptions in C#:
+
+1. **System Exception:** caused by CLR.
+2. **Application Exception:** caused by logic based on some condition by the programmer.
+
+```csharp 
+// Step 1. Create on Custom Exception class 
+public class OddNumberException : Exception {}
+
+// Step 2. Create instance of the Custom Exception class
+OddNumberException ONE = new OddNumberException();
+
+// Step 3. Thorw the Custom Exception Instance
+throw ONE;
+throw new OddNumberException();
+```
+
+#### To create a Custom Exception class in C#, we need to follow the below steps.
+
+- **Step1:** Define a new class inheriting from the predefined Exception class so that the new class also acts as an Exception class.
+- **Step2:** Then as per your requirement, override the virtual members that are defined inside the Exception class like Message, Source, StackTrace, etc with the required error message.
+
+```csharp 
+public class OddNumberException : Exception {
+    // Override the message property
+    public override string Message{
+        get {
+            return "Divisor can not be an Odd Number";
+        }
+    }
+
+    // Overriding the HelpLink Property
+    public override string HelpLink {
+        get {
+            return "Get More Information Here: telefun.com/help";
+        }
+    }
+}
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int Number1, Number2, Result;
+            try
+            {
+                Console.WriteLine("Enter First Number:");
+                Number1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Second Number:");
+                Number2 = int.Parse(Console.ReadLine());
+                if (Number2 % 2 > 0)
+                {
+                    //OddNumberException ONE = new OddNumberException();
+                    //throw ONE;
+                    throw new OddNumberException();
+                }
+                Result = Number1 / Number2;
+                Console.WriteLine(Result);
+            }
+            catch (OddNumberException one)
+            {
+                Console.WriteLine($"Message: {one.Message}");
+                Console.WriteLine($"HelpLink: {one.HelpLink}");
+                Console.WriteLine($"Source: {one.Source}");
+                Console.WriteLine($"StackTrace: {one.StackTrace}");
+            }
+            Console.WriteLine("End of the Program");
+            Console.ReadKey();
+        }
+    }
+```
+
+## Inner Exception in C#
+
+The Inner Exception in C# is a property of the Exception class. When there is a series of exceptions, then the *Most Current Exception Obtains the Previous Exception Details in the InnerException Property*. Suppose, in our application, from Method1, we are calling Method2. In Method2, we are getting one exception let’s say divide by zero exception, and then from Method1 we are getting another exception, let’s say Format exception. Then, in this case, the current exception or the latest exception is Format Exception and in the Format Exception InnerException property, you will get the previous exception details i.e. Divide By Zero Exception.
+
+## Exception Handling Abuse in C#
+
+Sometimes, as a programmer, we are using exception handling mechanisms to implement programming logic which is bad, and this is called Exception Handling Abuse in C#.
+
