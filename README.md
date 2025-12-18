@@ -1602,3 +1602,37 @@ The Inner Exception in C# is a property of the Exception class. When there is a 
 
 Sometimes, as a programmer, we are using exception handling mechanisms to implement programming logic which is bad, and this is called Exception Handling Abuse in C#.
 
+## Events, Delegates and Lambda Expression in C#
+
+## Roles of Events, Delegates, and Event Handler in C#
+
+### Role of Event:
+
+- Events are notifications which singal the occurence of an action.
+- Play a central role in .Net framework 
+- there is an event generator like a button click and there may be multiple objects listening to that event.
+- provide a way to trigger notifications
+- Usually there is some data attached to an Event which is Event Details. 
+- Most of the Events in .NET Framework are having *EventArgs* or in other words, Event Data gets routed form Point A (Event Raiser) to Point B (Event Handler) using the **EventArgs** only.
+- Object that raise the event do not need to know about the object who is going to handle the event.
+```Event pass EventArgs (event data)```
+
+### Role of Delegates:
+
+- **Delegates** are *pipline*  between Event Raiser and Event Listener / Handler.
+- without *Delegates*, the event would not be useful at all. Because without delegates, we do not have any other way through which event goes from Event Raiser to Event Handler.
+
+### What is a Delegate Exactly in .NET Framework?
+
+- Behind the scenes when we used events and created delegates, there is a special class in .NET called as **MulticastDelegate** and this is the class that actually tracks everyone who is listening to the event. 
+- if we have 50 listeners, then we have 50 items or objects inside of what we called is **Invocation list**.
+- Delegate is a specialized class often called as **Function Pointer** because  an *event handler* in .NET is actaully a *method* and the *Delegate* is pointing to the event handler. When the delegate is called, the event handler function to which delegate is poiting to is executed. 
+- Based on **MulticastDelegate** base class 
+
+Button -> click event raised        =>      Delegate        =>  Method Handles Click Event
+
+### Event Handler
+
+Event Handler is a method in C#, that is responsible for receiving and processing the data it gets from the delegate. Event handler normally has two parameteres:
+1. Sender who sent it to you (object type).
+2. EventArgs object and is responsible for encapsulating data. It's more like a container that contains the data.
