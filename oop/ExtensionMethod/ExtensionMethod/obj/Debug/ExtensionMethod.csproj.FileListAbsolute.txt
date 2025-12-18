@@ -1,0 +1,7 @@
+C:\dotnet\oop\ExtensionMethod\ExtensionMethod\bin\Debug\ExtensionMethod.exe.config
+C:\dotnet\oop\ExtensionMethod\ExtensionMethod\bin\Debug\ExtensionMethod.exe
+C:\dotnet\oop\ExtensionMethod\ExtensionMethod\bin\Debug\ExtensionMethod.pdb
+C:\dotnet\oop\ExtensionMethod\ExtensionMethod\obj\Debug\ExtensionMethod.csproj.AssemblyReference.cache
+C:\dotnet\oop\ExtensionMethod\ExtensionMethod\obj\Debug\ExtensionMethod.csproj.CoreCompileInputs.cache
+C:\dotnet\oop\ExtensionMethod\ExtensionMethod\obj\Debug\ExtensionMethod.exe
+C:\dotnet\oop\ExtensionMethod\ExtensionMethod\obj\Debug\ExtensionMethod.pdb

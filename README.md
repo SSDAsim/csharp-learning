@@ -1349,3 +1349,64 @@ If we don’t allow subclasses to override the superclass method and ensure that
 4. We should create an object for a sealed class to consume its members.
 5. We need to use the keyword sealed to make any class sealed.
 7. The sealed class should be the bottom-most class within the inheritance hierarchy.
+
+### What are Extension Methods in C#?
+
+It is a new feature that has been added in C# 3.0 which allows us to add new methods into a class without editing the source code of the class i.e. if a class consists of a set of members in it and in the future if you want to add new methods into the class, you can add those methods without making any changes to the source code of the class.   
+
+Extension methods can be used as an approach to extending the functionality of a class in the future if the source code of the class is not available or we don’t have any permission in making changes to the class.
+
+Before extension methods, inheritance is an approach that is used for extending the functionality of a class.
+
+In the case of an extension method, we will extend the functionality of an existing class. In this case, we will create a new class and by using that new class we will extend the functionality of an existing class.   
+
+Inheritance might not work in case of sealed classes, but we can extend the functionality of sealed class using the Extension Method.
+
+### Points to Remember while working with C# Extension methods:
+
+- Extension methods must be defined under the *static* class only. Ultimately, the extension methods are going to be *static* but once they are bound with a class, they become non-static. 
+- The first paramter of the extension method is called *Binding Parameter* which should be the name of the class the method has to be bound to. The binding paramter can only be just one.
+```csharp
+public static void Test4(this OldClass O, int x)  {  }
+```
+
+### Let's extend String class's functionality to include a new method GetWordCount():
+
+```csharp
+using System;
+using System.Linq;
+
+namespace ExtensionMethod
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string myWord = "Welcome to Dotnet Tutorials Extension Methods Article";
+            int wordCount = myWord.GetWordCount();
+
+            Console.WriteLine("string: " + myWord);
+            Console.WriteLine("count: " + wordCount);
+            Console.ReadKey();
+        }
+    }
+
+    // extend String class Functionlaity
+    public static class StringExtension
+    {
+        public static int GetWordCount(this string inputString)
+        {
+            // null check 
+            if (!string.IsNullOrEmpty(inputString))
+            {
+                // split the array by space - create an array of words 
+                string[] strArray = inputString.Split(' ');
+                return strArray.Count();
+            } else
+            {
+                return 0;
+            }
+        }
+    }
+}
+```
