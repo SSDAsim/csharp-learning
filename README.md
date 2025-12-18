@@ -1235,3 +1235,42 @@ class Program {
 ```
 
 So, if a Parent class reference variable is created using the Child class object reference, then using that Parent reference we can call the Child class overriding methods but we cannot call the child class hiding methods.
+
+## Partial Class and Partial Method 
+
+**Partial Class** is split into more than one file. Physically it is split but logically it is the same class. It is defined using the *partial* keyword. 
+
+```csharp 
+// PartialEmployeeOne.cs
+
+public partial class PartialEmployee {
+    //.... some code 
+}
+
+// PartialEmployeeTwo.cs
+public partial class PartialEmployee {
+    //..rest of the code of Employee class
+}
+```
+
+### Things to consider while working with Partial Classes 
+
+- Note the 'partial keyword and even though the class is split into multiple files, the class name is going to be the same. 
+- All the parts of the partial class must have the same access modifier
+- If any part is declard as abstract/sealed, whole class will be considered as abstarct/sealed. 
+- If any part inherits a class, then the entire type inherits the class. 
+- It is not possible that one part of the partial class inherits one parent class and other part of the partial class inherits other parent class. 
+- It is, however possible that different parts of the partial class inherit different base interfaces and then the final partial class inherits all the base interfaces. 
+- Any members that are declared in a partial definition are available to all of the other parts of the partial class. 
+
+### When do we need to use Partial Class in C#?
+
+1. When working on large projects, splitting a class over separate files allows multiple programmers to work on it simultaneously.
+2. When working with automatically generated source code, the code can be added to the class without having to recreate the source file. Visual Studio uses this approach when creating windows form, Web service wrapper code, and so on.
+
+### Partial Methods 
+
+- Partial Methods should and must be declared inside a Partial Class or Struct 
+- Partial Method declaration and definition must be different. It may be in the same class but you can not declare and implement a partial method at once. You need to declare it and the implement it somewhere else (maybe in same part of the class or maybe in other part of the class)
+- Partial Method signature should match it's implementation (name of the method, type, name, number and order of parameters). Also with same access modifier.
+- By default, partial methods are private. 
