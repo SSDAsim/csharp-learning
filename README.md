@@ -1410,3 +1410,22 @@ namespace ExtensionMethod
     }
 }
 ```
+
+## Static Class in C#
+
+- created using static modifier. 
+- can contain only static members. 
+- no instance of static class can be created.
+- we can access the static members of a class by using the class name. 
+- Due to the single instance behavior, the static class is also going to be used to share the common data.
+- static classes are sealed, which means we cannot inherit a static class from another class.
+
+### Difference Between Static and Non-Static Class in C#
+
+1. In C#, the static class is created by using the static keyword, the rest of the others are non-static classes.
+2. We cannot create an instance of a static class even if reference variables are not possible. On the other hand, we can create both instance and reference variables using a non-static class.
+3. We can access the members of a static class directly by using the class name. To access the non-static members, we need an instance or object of that class.
+4. In static class, we can only define static members. On the other hand, inside a non-static class, we can define both static and non-static members.
+5. A static class contains only a static constructor whereas a non-static class contains can both static and instance constructors.
+6. Static classes are sealed and hence cannot inherit from another class. On the other hand, the non-static class can be inherited by another class.
+
