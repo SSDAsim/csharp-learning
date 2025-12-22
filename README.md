@@ -1687,6 +1687,16 @@ WorkPerformedHandler del1 = new WorkPerformedHandler(Manager_WorkPerformed);
 del1(10, WorkType.Golf);
 ```
 
+## MultiCast Delegate 
+
+### What is Multicast Delegate in C#?
+
+- holds the reference of more than one Handler Function. so it is just an array of multiple pipelines or multiple delegates.
+- when we invoke the delegate, all the functions which are referenced by the delegate are going to be invoked. 
+- If you want to call multiple methods using a delegate then all the method signatures should be the same. 
+- The delegates are going to be invoked in the same order as they are placed in the invocation list
+
+
 
 
 
