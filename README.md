@@ -1636,3 +1636,57 @@ Button -> click event raised        =>      Delegate        =>  Method Handles C
 Event Handler is a method in C#, that is responsible for receiving and processing the data it gets from the delegate. Event handler normally has two parameteres:
 1. Sender who sent it to you (object type).
 2. EventArgs object and is responsible for encapsulating data. It's more like a container that contains the data.
+
+## Delegate 
+
+### What are Delegates in C#?
+
+- Type-Safe Function Pointers that hold the reference of a method or function and then call that method for execution.
+
+### How to Create a Custom Delegates in C#?
+
+```<Access Modifier> delegate <Return Type> <Delegate Name> (Parameter List);```
+```public delegate void WorkPerformedHandler(int hours, WorkType workType);```
+
+- We are going to route the data which is stored somewhere in our program over to this Handler Method using the pipeline i.e. using a delegate. In delegate, we need to define the parameters which will route the data from point A to point B (i.e. Handler method).
+- The Delegate signature and the handler method signature must match.
+- Event handler must have the same number of, type of and order of parameters as the Delegate. However, parameter names do not matter. 
+
+```csharp
+    // Delegate
+    public delegate void WorkPerformedHandler(int hours, WorkType workType);
+
+    // Handler Method
+    public void Manager_WorkPerformed(int workHours, WorkType wType) {}
+
+```
+
+### MulticastDelegate Base Class in C#:
+
+Multicast Delegate is a way to hold multiple delegates. For example, I have one message that I want to send over multiple pipelines which will dump the same data into multiple Handler Methods. So, your custom delegate as we discussed earlier will inherit from the Multicast Delegate. The complete hierarchy is given below.
+
+Delegate (Method, Target, GetInvocationList())   <===   Multicast Delegate   <==     CustomDelegate
+
+- Delegate and MultiCastDelegate are special classes that compiler restricts us from inheriting. You just need to use 'delegate' keyword and once the compiler sees the delegate keyword in the signature, then it will automatically generate the class that inherits from the Multicast Delegate.
+
+### How to use the Delegate in C#?
+
+```csharp
+// 1. Declaring the Delegate signature 
+public delegate void WorkPerformedHandler(int hours, WorkType workType);
+
+// 2. creating the Handler method 
+public static void Manager_WorkPerformed(int workHours, WorkType wType) {
+    //...processing
+}
+
+// 3. creating an instance of the Delegate
+WorkPerformedHandler del1 = new WorkPerformedHandler(Manager_WorkPerformed);
+
+// invoking the delegate
+del1(10, WorkType.Golf);
+```
+
+
+
+
