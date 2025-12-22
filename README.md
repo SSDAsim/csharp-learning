@@ -1741,7 +1741,19 @@ Console.WriteLine(Status);
 1. Func, Action, and Predicate are Generic Inbuilt delegates that are present in the System namespace which is introduced in C# 3.
 2. All these three delegates can be used with the method, Anonymous Method, and Lambda Expressions in C#.
 
+## Anonymous Method in C#
 
+- method without name
+- code block without name
+- The Anonymous Methods in C# are defined using the delegate keyword and can be assigned to a variable of the delegate type.
+- anonymous methods are suggested when the code volume is very less and if it is one-time use only.
+- Anonymous Method in C# cannot access the ref or out parameter of an outer method.
+
+```csharp
+GreetingsDelegate gd = delegate (string name) {
+    return "Hello @" + name + " Welcome to Dotnet Tutorials";
+};
+```
 
 
 
