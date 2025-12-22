@@ -1697,6 +1697,53 @@ del1(10, WorkType.Golf);
 - The delegates are going to be invoked in the same order as they are placed in the invocation list
 
 
+## Generic Delegates 
+
+### Types of Generic Delegates in C#
+
+C# provides three built-in generic delegates, they are as follows:
+
+- Func
+- Action
+- Predicate
+
+### What is Func Generic Delegate in C#?
+
+This delegate takes one or more input parameters and returns one out parameter. The last parameter is considered as the return value. The Func Generic Delegate in C# can take up to 16 input parameters of different or the same data types. It must have one return type. The return type is mandatory but the input parameter is not mandatory.
+
+```csharp 
+Func<int, float, double, double> obj1 = new Func<int, float, double, double>(AddNumber1);
+double Result = obj1.Invoke(100, 125.43f, 456.789);
+Console.WriteLine(Result);
+```
+
+### What is Action Generic Delegate in C#?
+
+The Action Generic Delegate in C# is also present in the System namespace. It takes one or more input parameters and returns nothing. This delegate can take a maximum of 16 input parameters of the different or same data types.
+
+```csharp 
+Action<int, float, double> obj2 = new Action<int, float, double>(AddNumber2);
+obj2.Invoke(100, 125.43f);
+```
+
+### What is Predicate Generic Delegate in C#?
+
+The Predicate Generic Delegate in C# is also present in the System namespace. This delegate is used to verify certain criteria of the method and returns the output as Boolean, either True or False. It takes one input parameter and always returns a Boolean value which is mandatory. This delegate can take a maximum of 1 input parameter and always return the value of the Boolean type.
+
+```csharp
+Predicate<string> obj3 = new Predicate<string>(CheckLength);
+bool Status = obj3.Invoke("Pranaya");
+Console.WriteLine(Status);
+```
+
+### Points to Remember while working with C# Generic Delegates:
+
+1. Func, Action, and Predicate are Generic Inbuilt delegates that are present in the System namespace which is introduced in C# 3.
+2. All these three delegates can be used with the method, Anonymous Method, and Lambda Expressions in C#.
+
+
+
+
 
 
 
