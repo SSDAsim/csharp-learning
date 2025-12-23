@@ -2102,4 +2102,21 @@ In C#, we can implement Non-Exclusive Lock using the
 - SemaphoreSlim
 - ReaderWriterLockSlim classes.
 
+**Note**: When you want to synchronize thread access to a shared resource, you should lock the shared resource on a dedicated object instance (for example, private readonly object _lockObject = new object(); or private static readonly object _lockObject = new object();). Avoid using the same lock object instance for different shared resources, as it might result in a deadlock.
+
+### How is the lock Statement internally work in C#?
+
+```csharp 
+bool lockWasTaken = false;
+var temp = new object;
+
+try {
+    Monitor.Enter(temp, ref lockWasTaken);
+    // body
+} finally {
+    if (lockWasTaken){
+        Monitor.Exit(temp);
+    }
+}
+```
 
