@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\RetrieveDataFromThread\RetrieveDataFromThread\bin\Debug\RetrieveDataFromThread.exe.config
+C:\dotnet\multi-threading\RetrieveDataFromThread\RetrieveDataFromThread\bin\Debug\RetrieveDataFromThread.exe
+C:\dotnet\multi-threading\RetrieveDataFromThread\RetrieveDataFromThread\bin\Debug\RetrieveDataFromThread.pdb
+C:\dotnet\multi-threading\RetrieveDataFromThread\RetrieveDataFromThread\obj\Debug\RetrieveDataFromThread.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\RetrieveDataFromThread\RetrieveDataFromThread\obj\Debug\RetrieveDataFromThread.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\RetrieveDataFromThread\RetrieveDataFromThread\obj\Debug\RetrieveDataFromThread.exe
+C:\dotnet\multi-threading\RetrieveDataFromThread\RetrieveDataFromThread\obj\Debug\RetrieveDataFromThread.pdb
