@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\multi-threading\\ThreadSynchLock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08388A85-4724-4368-ACDF-530E3793DC7B}|ThreadSynchLock\\ThreadSynchLock.csproj|c:\\dotnet\\multi-threading\\threadsynchlock\\threadsynchlock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08388A85-4724-4368-ACDF-530E3793DC7B}|ThreadSynchLock\\ThreadSynchLock.csproj|solutionrelative:threadsynchlock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\multi-threading\\ThreadSynchLock\\ThreadSynchLock\\Program.cs",
+              "RelativeDocumentMoniker": "ThreadSynchLock\\Program.cs",
+              "ToolTip": "C:\\dotnet\\multi-threading\\ThreadSynchLock\\ThreadSynchLock\\Program.cs",
+              "RelativeToolTip": "ThreadSynchLock\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T07:44:34.586Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

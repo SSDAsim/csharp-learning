@@ -2028,3 +2028,78 @@ if (thread1.IsAlive)
     Console.WriteLine("Thread1 Method1 is still Executing");
 }
 ```
+
+## Thread Synchronization in C#
+
+- one or more threads accessing the shared resource might result in any inconsistency. 
+- Synchronization makes sure that only one thread is accessing a shared resource at any given point of time. 
+
+### How Thread Synchronization is Achieved in C#?
+
+1. Locks 
+```csharp
+lock(object)
+{
+    //Statement1
+    //Statement2
+    //And more statements to be synchronized
+}
+```
+
+```csharp
+internal class Program
+{
+    static object lockObj = new object();
+    static void Main(string[] args)
+    {
+        Thread thread1 = new Thread(SomeMethod)
+        {
+            Name = "Thread1"
+        };
+
+        Thread thread2 = new Thread(SomeMethod)
+        {
+            Name = "Thread2"
+        };
+
+        Thread thread3 = new Thread(SomeMethod)
+        {
+            Name = "Thread3"
+        };
+
+        thread1.Start();
+        thread2.Start();
+        thread3.Start();
+
+        Console.ReadKey();
+    }
+
+    static void SomeMethod ()
+    {
+        lock(lockObj)
+        {
+            Console.WriteLine("[Welcome to C#");
+            Thread.Sleep(1000);
+            Console.WriteLine("and Angular Course]");
+        }
+    }
+}
+```
+
+### Why do we need Thread Synchronization in Multithreading?
+
+1. **Atomicity**: Thread Synchronization supports *atomicity*, which ensures that multiple threads in the application are not allowed to access a shared resource concurrently to prevent data inconsistency. The code section of our program which causes data inconsistency is known as the *critical section*.
+2. **Ordering**: We generally want two or more threads to perform a task in a particular order or we want to restrict access to shared resources to a particular number of threads only.
+
+### What is Exclusive Lock and Non-Exclusive Lock in C#?
+
+A process or a thread requests a lock on the object. The type of lock can be
+- Exclusive Lock: Only one thread can access the critical section at any given point of time.
+- Non-Exclusive Lock: Provides *read-only* access to a shared resource and limit the concurrency i.e. limit the number of concurrent accesses to a shared resource.
+
+In C#, we can implement Non-Exclusive Lock using the 
+- Semaphore
+- SemaphoreSlim
+- ReaderWriterLockSlim classes.
+
+

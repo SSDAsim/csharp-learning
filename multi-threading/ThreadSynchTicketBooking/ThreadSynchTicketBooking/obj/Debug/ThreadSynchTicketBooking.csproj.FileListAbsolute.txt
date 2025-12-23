@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\ThreadSynchTicketBooking\ThreadSynchTicketBooking\bin\Debug\ThreadSynchTicketBooking.exe.config
+C:\dotnet\multi-threading\ThreadSynchTicketBooking\ThreadSynchTicketBooking\bin\Debug\ThreadSynchTicketBooking.exe
+C:\dotnet\multi-threading\ThreadSynchTicketBooking\ThreadSynchTicketBooking\bin\Debug\ThreadSynchTicketBooking.pdb
+C:\dotnet\multi-threading\ThreadSynchTicketBooking\ThreadSynchTicketBooking\obj\Debug\ThreadSynchTicketBooking.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\ThreadSynchTicketBooking\ThreadSynchTicketBooking\obj\Debug\ThreadSynchTicketBooking.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\ThreadSynchTicketBooking\ThreadSynchTicketBooking\obj\Debug\ThreadSynchTicketBooking.exe
+C:\dotnet\multi-threading\ThreadSynchTicketBooking\ThreadSynchTicketBooking\obj\Debug\ThreadSynchTicketBooking.pdb
