@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\ThreadAnonymMethod\ThreadAnonymMethod\bin\Debug\ThreadAnonymMethod.exe.config
+C:\dotnet\multi-threading\ThreadAnonymMethod\ThreadAnonymMethod\bin\Debug\ThreadAnonymMethod.exe
+C:\dotnet\multi-threading\ThreadAnonymMethod\ThreadAnonymMethod\bin\Debug\ThreadAnonymMethod.pdb
+C:\dotnet\multi-threading\ThreadAnonymMethod\ThreadAnonymMethod\obj\Debug\ThreadAnonymMethod.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\ThreadAnonymMethod\ThreadAnonymMethod\obj\Debug\ThreadAnonymMethod.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\ThreadAnonymMethod\ThreadAnonymMethod\obj\Debug\ThreadAnonymMethod.exe
+C:\dotnet\multi-threading\ThreadAnonymMethod\ThreadAnonymMethod\obj\Debug\ThreadAnonymMethod.pdb

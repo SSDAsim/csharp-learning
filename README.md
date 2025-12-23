@@ -1829,3 +1829,105 @@ t2.Start();
 t3.Start();
 ```
 
+## Threads 
+
+### Understand ThreadStart Delegate in C#
+
+```csharp 
+
+// have you wondered how we are passing a method to the Thread() constructructo? It is actually a delegate and 
+Thread t2 = new Thread(new Thread(method2)) {}
+
+// is actually 
+
+ThreadStart obj = new ThreadStart(method2);
+Thread t2 = new Thread(obj);
+```
+
+Consider this code:
+```csharp 
+using System.Threading;
+using System;
+namespace ThreadingDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Creating the ThreadStart Delegate instance by passing the
+            //method name as a parameter to its constructor
+            ThreadStart obj = new ThreadStart(DisplayNumbers);
+            //Passing the ThreadStart Delegate instance as a parameter to its constructor
+            Thread t1 = new Thread(obj);
+            t1.Start();
+            Console.Read();
+        }
+        static void DisplayNumbers()
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine("Method1 :" + i);
+            }
+        }
+    }
+}
+```
+
+### Creating Thread Class Instance using Anonymous Method in C#
+
+```csharp 
+static void Main(string[] args)
+{
+    //Creating Thread Class Instance using Lambda Expression
+    Thread t1 = new Thread(delegate ()
+    {
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("Method1 :" + i);
+        }
+    });
+    t1.Start();
+    Console.Read();
+}
+```
+
+### Creating Thread Class Instance using Lambda Expression in C#
+
+```csharp
+static void Main(string[] args)
+{
+    //Creating Thread Class Instance using Lambda Expression
+    Thread t1 = new Thread(() =>
+    {
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine("Method1 :" + i);
+        }
+    });
+    t1.Start();
+    Console.Read();
+}
+```
+
+### Thread Function with Parameter in C#
+
+```csharp 
+static void Main(string[] args)
+{
+    //DisplayNumbers is now a non-static method, so we need to
+    //refer it by using the instannce
+    Program obj = new Program();
+    Thread t1 = new Thread(obj.DisplayNumbers);
+    t1.Start(5);
+    Console.Read();
+}
+public void DisplayNumbers(object Max)
+{
+    int Number = Convert.ToInt32(Max);
+    for (int i = 1; i <= Number; i++)
+    {
+        Console.WriteLine("Method1 :" + i);
+    }
+}
+```
+

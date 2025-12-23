@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\ThreadLambdaMethod\ThreadLambdaMethod\bin\Debug\ThreadLambdaMethod.exe.config
+C:\dotnet\multi-threading\ThreadLambdaMethod\ThreadLambdaMethod\bin\Debug\ThreadLambdaMethod.exe
+C:\dotnet\multi-threading\ThreadLambdaMethod\ThreadLambdaMethod\bin\Debug\ThreadLambdaMethod.pdb
+C:\dotnet\multi-threading\ThreadLambdaMethod\ThreadLambdaMethod\obj\Debug\ThreadLambdaMethod.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\ThreadLambdaMethod\ThreadLambdaMethod\obj\Debug\ThreadLambdaMethod.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\ThreadLambdaMethod\ThreadLambdaMethod\obj\Debug\ThreadLambdaMethod.exe
+C:\dotnet\multi-threading\ThreadLambdaMethod\ThreadLambdaMethod\obj\Debug\ThreadLambdaMethod.pdb

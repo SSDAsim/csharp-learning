@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\ThreadFunParam\ThreadFunParam\bin\Debug\ThreadFunParam.exe.config
+C:\dotnet\multi-threading\ThreadFunParam\ThreadFunParam\bin\Debug\ThreadFunParam.exe
+C:\dotnet\multi-threading\ThreadFunParam\ThreadFunParam\bin\Debug\ThreadFunParam.pdb
+C:\dotnet\multi-threading\ThreadFunParam\ThreadFunParam\obj\Debug\ThreadFunParam.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\ThreadFunParam\ThreadFunParam\obj\Debug\ThreadFunParam.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\ThreadFunParam\ThreadFunParam\obj\Debug\ThreadFunParam.exe
+C:\dotnet\multi-threading\ThreadFunParam\ThreadFunParam\obj\Debug\ThreadFunParam.pdb
