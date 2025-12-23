@@ -1755,7 +1755,77 @@ GreetingsDelegate gd = delegate (string name) {
 };
 ```
 
+## What are Lambda Expressions
 
+- shorthand for writing anonymous functions
+- Lambda function is to simplify the anonymous functions
 
+```csharp 
 
+// delegate method using anonymous function 
+GreetingsDelegate obj = delegate (string name)
+{
+    //...
+};
+
+// delegate method using lambda function 
+GreetingsDelegate obj = (name) => 
+{
+    //sasdfsad
+};
+```
+
+## Events in C#
+
+- Events enable a class or object to notify other classes or objects when something of action occurs.
+- publisher => sends/raise the event 
+- subscriber => receive the event
+- Typically, a publisher raises an event when some action occurred. The subscribers, who are interested in getting a notification when an action occurred, should register with an event and handle it.
+- events are really wrappers around the delegate. 
+
+```csharp
+// 1. Define a delegate 
+public delegate void WorkPerformedHandler(int hours, WorkType workType);
+
+// 2. Define one event using the delegate 
+public event WorkPerformedHandler WorkPerformed;
+```
+
+## Multithreading
+
+- Thread is a lightweight process that has its own execution context. 
+- Operating System has processes to run our application and processes contain Threads which will actually run our application.
+- Process usually uses a single thread to run our application but processes can have multiple threads and these threads can run our application code simultaneously.
+-  Multithreading is a mechanism to implement Concurrent Programming where multiple threads operate simultaneously.
+- Threads increase the efficiency of an application and reduces CPU cycle time wastage.
+- The Thread class in C# is sealed and cannot be inherited.
+
+Multithreading is related to Multitasking. By default, every application is *single-threaded* which uses main thread to run its code but that leaves us with poor utilization of CPU. Suppose, there are three processes in your program. Be default, the exectution will be sequential i.e. method1() then method2() and so on. However method2() might have to make a call to API which might take 10 sec. Will the other process after method2() keep on waiting for method2() to execute? No, that will kill the efficieny of the program. 
+
+```csharp 
+// delays execution for 10 sec (10000 ms)
+Thread.Sleep(10000);
+```
+
+```csharp 
+Thread t1 = new Thread(Method1)
+{
+    Name = "Thread1"
+};
+
+Thread t2 = new Thread(Method2)
+{
+    Name = "Thread2"
+};
+
+Thread t3 = new Thread(Method3)
+{
+    Name = "Thread3"
+};
+
+// Executing methods
+t1.Start();
+t2.Start();
+t3.Start();
+```
 

@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\ThreadingDemo\ThreadingDemo\bin\Debug\ThreadingDemo.exe.config
+C:\dotnet\multi-threading\ThreadingDemo\ThreadingDemo\bin\Debug\ThreadingDemo.exe
+C:\dotnet\multi-threading\ThreadingDemo\ThreadingDemo\bin\Debug\ThreadingDemo.pdb
+C:\dotnet\multi-threading\ThreadingDemo\ThreadingDemo\obj\Debug\ThreadingDemo.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\ThreadingDemo\ThreadingDemo\obj\Debug\ThreadingDemo.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\ThreadingDemo\ThreadingDemo\obj\Debug\ThreadingDemo.exe
+C:\dotnet\multi-threading\ThreadingDemo\ThreadingDemo\obj\Debug\ThreadingDemo.pdb
