@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\DataToThread\DataToThread\bin\Debug\DataToThread.exe.config
+C:\dotnet\multi-threading\DataToThread\DataToThread\bin\Debug\DataToThread.exe
+C:\dotnet\multi-threading\DataToThread\DataToThread\bin\Debug\DataToThread.pdb
+C:\dotnet\multi-threading\DataToThread\DataToThread\obj\Debug\DataToThread.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\DataToThread\DataToThread\obj\Debug\DataToThread.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\DataToThread\DataToThread\obj\Debug\DataToThread.exe
+C:\dotnet\multi-threading\DataToThread\DataToThread\obj\Debug\DataToThread.pdb

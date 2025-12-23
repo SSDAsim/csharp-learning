@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\ThreadFuncTypeSafe\ThreadFuncTypeSafe\bin\Debug\ThreadFuncTypeSafe.exe.config
+C:\dotnet\multi-threading\ThreadFuncTypeSafe\ThreadFuncTypeSafe\bin\Debug\ThreadFuncTypeSafe.exe
+C:\dotnet\multi-threading\ThreadFuncTypeSafe\ThreadFuncTypeSafe\bin\Debug\ThreadFuncTypeSafe.pdb
+C:\dotnet\multi-threading\ThreadFuncTypeSafe\ThreadFuncTypeSafe\obj\Debug\ThreadFuncTypeSafe.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\ThreadFuncTypeSafe\ThreadFuncTypeSafe\obj\Debug\ThreadFuncTypeSafe.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\ThreadFuncTypeSafe\ThreadFuncTypeSafe\obj\Debug\ThreadFuncTypeSafe.exe
+C:\dotnet\multi-threading\ThreadFuncTypeSafe\ThreadFuncTypeSafe\obj\Debug\ThreadFuncTypeSafe.pdb

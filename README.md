@@ -1931,3 +1931,70 @@ public void DisplayNumbers(object Max)
 }
 ```
 
+## How to Pass Data to Thread Function in Type-Safe Manner 
+
+### How to Pass Data to the Thread Function in C#
+
+```csharp
+// This is the type safe since we the delegate takes object type while if we provide string it might cause an error 
+static void Main(string[] args)
+{
+    Program obj = new Program();
+    ParameterizedThreadStart PTSD = new ParameterizedThreadStart(obj.DisplayNumber);
+    Thread t1 = new Thread(PTSD);
+
+    t1.Start("Hi");
+    Console.ReadKey();
+
+}
+
+public void DisplayNumber (object Max)
+{
+    int Number = Convert.ToInt32(Max);
+    for (int i = 0; i <= Number; i++)
+    {
+        Console.WriteLine("Method1 " + i);
+    }
+}
+```
+
+### How to Make the Thread Function Type-Safe in C#?
+
+- When we are saying type-safe, it means we should not use the object data type
+- we need to use the data type as an integer. So at the time of compilation, if we pass any data other than an integer, then it should give us a compile-time error.
+
+```csharp 
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int num = 10;
+        NumberHelper obj = new NumberHelper(num);
+
+        Thread T1 = new Thread(new ThreadStart(obj.DisplayNumber));
+
+        T1.Start();
+        Console.ReadKey();
+
+    }
+}
+
+// In order to pass the data in a type-safe manner to a Thread function in C#, first, you need to encapsulate the thread function and the data it requires in a helper class
+public class NumberHelper
+{
+    private int _Number;
+
+    public NumberHelper (int Number)
+    {
+        _Number = Number;
+    }
+
+    public void DisplayNumber ()
+    {
+        for (int i = 0; i <= _Number; i++)
+        {
+            Console.WriteLine("value: " + i);
+        }
+    }
+}
+```
