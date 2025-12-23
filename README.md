@@ -2120,3 +2120,28 @@ try {
 }
 ```
 
+## Multithreading using Monitor
+
+- we can also use this Monitor Class to protect the shared resources in a multi-threaded environment from concurrent access. 
+- This can be done by acquiring an exclusive lock on the object 
+- Monitor is a static class belonging to System.Threading which provides a collection of static methods to synchronize access to critical sections of an object. 
+
+```csharp
+object lockObj = new object();
+
+try {
+    // trying to enter into the critical section 
+    Monitor.Enter(lockObj);
+    // Access the shared resource
+
+} finally {
+    // Release the lock  
+    Monitor.Exit(lokcObj);
+}
+```
+
+### Difference Between Monitor and Lock in C#
+
+- *Lock* internally wraps the Enter and Exit methods in a try…finally block with exception handling. (less control)
+- for *Monitor* class we need to use the try and finally block explicitly to release the lock properly (more static methods, more control)
+- Lock = Monitor + try-finally.
