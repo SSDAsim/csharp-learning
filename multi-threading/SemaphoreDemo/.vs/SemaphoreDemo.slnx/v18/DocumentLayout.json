@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\multi-threading\\SemaphoreDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84566B61-3485-4320-BD63-E1EE4036A755}|SemaphoreDemo\\SemaphoreDemo.csproj|c:\\dotnet\\multi-threading\\semaphoredemo\\semaphoredemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84566B61-3485-4320-BD63-E1EE4036A755}|SemaphoreDemo\\SemaphoreDemo.csproj|solutionrelative:semaphoredemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\multi-threading\\SemaphoreDemo\\SemaphoreDemo\\Program.cs",
+              "RelativeDocumentMoniker": "SemaphoreDemo\\Program.cs",
+              "ToolTip": "C:\\dotnet\\multi-threading\\SemaphoreDemo\\SemaphoreDemo\\Program.cs",
+              "RelativeToolTip": "SemaphoreDemo\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:05:45.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

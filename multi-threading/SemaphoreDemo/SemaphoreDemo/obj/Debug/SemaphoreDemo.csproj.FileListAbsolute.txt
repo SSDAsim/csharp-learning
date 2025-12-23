@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\SemaphoreDemo\SemaphoreDemo\bin\Debug\SemaphoreDemo.exe.config
+C:\dotnet\multi-threading\SemaphoreDemo\SemaphoreDemo\bin\Debug\SemaphoreDemo.exe
+C:\dotnet\multi-threading\SemaphoreDemo\SemaphoreDemo\bin\Debug\SemaphoreDemo.pdb
+C:\dotnet\multi-threading\SemaphoreDemo\SemaphoreDemo\obj\Debug\SemaphoreDemo.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\SemaphoreDemo\SemaphoreDemo\obj\Debug\SemaphoreDemo.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\SemaphoreDemo\SemaphoreDemo\obj\Debug\SemaphoreDemo.exe
+C:\dotnet\multi-threading\SemaphoreDemo\SemaphoreDemo\obj\Debug\SemaphoreDemo.pdb
