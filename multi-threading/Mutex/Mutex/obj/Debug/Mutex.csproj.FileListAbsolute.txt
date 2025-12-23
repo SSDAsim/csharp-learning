@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\Mutex\Mutex\obj\Debug\Mutex.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\Mutex\Mutex\obj\Debug\Mutex.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\Mutex\Mutex\bin\Debug\Mutex.exe.config
+C:\dotnet\multi-threading\Mutex\Mutex\bin\Debug\Mutex.exe
+C:\dotnet\multi-threading\Mutex\Mutex\bin\Debug\Mutex.pdb
+C:\dotnet\multi-threading\Mutex\Mutex\obj\Debug\Mutex.exe
+C:\dotnet\multi-threading\Mutex\Mutex\obj\Debug\Mutex.pdb

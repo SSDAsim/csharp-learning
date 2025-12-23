@@ -1,0 +1,7 @@
+C:\dotnet\multi-threading\SingleInstanceMutex\SingleInstanceMutex\bin\Debug\SingleInstanceMutex.exe.config
+C:\dotnet\multi-threading\SingleInstanceMutex\SingleInstanceMutex\bin\Debug\SingleInstanceMutex.exe
+C:\dotnet\multi-threading\SingleInstanceMutex\SingleInstanceMutex\bin\Debug\SingleInstanceMutex.pdb
+C:\dotnet\multi-threading\SingleInstanceMutex\SingleInstanceMutex\obj\Debug\SingleInstanceMutex.csproj.AssemblyReference.cache
+C:\dotnet\multi-threading\SingleInstanceMutex\SingleInstanceMutex\obj\Debug\SingleInstanceMutex.csproj.CoreCompileInputs.cache
+C:\dotnet\multi-threading\SingleInstanceMutex\SingleInstanceMutex\obj\Debug\SingleInstanceMutex.exe
+C:\dotnet\multi-threading\SingleInstanceMutex\SingleInstanceMutex\obj\Debug\SingleInstanceMutex.pdb
