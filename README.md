@@ -1998,3 +1998,33 @@ public class NumberHelper
     }
 }
 ```
+
+## Join Method and IsAlive Property of Thread Class in C#
+
+- Join() blocks the current thread and makes it wait untill child thread on which Join() invoked, complete its execution.
+- ```public void Join() ```-> block the current thread untill the thread represented by this instance terminates while continuing to perform standard COM and SendMessage pumping.
+- ```public void Join(int millisecTimeOut)``` -> block the current thread untill the thread represented by this instance terminates or the specified time elapses while continuing to perform standard COM and SendMessage pumping.
+- ```Join(TimeSpan timeout)``` -> this method blocks the calling thread until the thread represented by this instance terminates or the specified time elapses while continuing to perform standard COM and SendMessage pumping. Here, the parameter timeout specifies a System.TimeSpan is set to the amount of time to wait for the thread to terminate.
+
+```csharp
+
+thread1.Start();
+thread2.Start();
+thread3.Start();
+
+thread1.Join(); // Blocks the main thread until the execution of this thread
+thread2.Join(); // Blocks the main thread until the execution of this thread
+// Now, Main Thread will not wait for thread3 to complete its execution
+```
+
+### IsAlive Property of Thread Class
+
+- IsAlive property gets a value indicating the execution state of the current thread.
+- returns true if thread is still executing else returns false.
+
+```csharp 
+if (thread1.IsAlive)
+{
+    Console.WriteLine("Thread1 Method1 is still Executing");
+}
+```
