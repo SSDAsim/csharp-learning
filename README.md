@@ -2209,3 +2209,7 @@ Now, build the project and then run the application EXE file three times. The fi
 
 **Note2:** We need to call the Release() method when the thread wants to exit from the critical section. When this method is called, it increments the Int32 variable which is maintained by the semaphore object.
 
+## SemaphoreSlim
+
+- Semaphoreslim allows more control over the number of internal threads that can access our application code. 
+- It's a lightweight semaphore that controls access to a pool of resources that is local to your application. 
