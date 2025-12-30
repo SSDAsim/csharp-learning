@@ -2270,3 +2270,8 @@ The performance can be improved using *Thread Pooling*.
 
 - ```isBackground {get; set;}``` property is used to get or set the value indicating if the thread is a Foreground or Background Thread. It throws ThreadStateException if the thread is dead.
 
+## How to Debug a Multi-Threaded Application in C#
+
+### How to Debug a Specific Thread in C#?
+
+Suppose you want to debug only Thread One. You don’t want to debug Thread Two. This is also possible. Visual Studio provides two options i.e. **Freeze** and **Thaw**. So, when you select the Freeze option of a thread, then that thread is not going to be debugged by a debugger. Similarly, if you select the Thaw option of a thread, then again it is going to be debugged by the debugger. When a thread is created in C#, by default it is created with the Thaw option.
