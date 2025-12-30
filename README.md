@@ -2213,3 +2213,18 @@ Now, build the project and then run the application EXE file three times. The fi
 
 - Semaphoreslim allows more control over the number of internal threads that can access our application code. 
 - It's a lightweight semaphore that controls access to a pool of resources that is local to your application. 
+
+## Performance Testing of a Multithreaded Application
+
+### Performance Testing With Multiple Processors:
+
+If you have two threads and if each thread takes 10 milliseconds to complete the execution, then on a machine with 2 processors, the total time taken is 10 milliseconds.
+
+### Performance Testing With Single Processor:
+
+- Multiple threads are going to execute one after the other. 
+- It is not possible for a single-core processor machine to execute multiple threads in parallel.
+- The operating system switches between the threads so fast, it just gives us the illusion that the threads are running in parallel.
+- On a single threaded application, the overhead of context switching affects the performance.
+- If you have two threads and each thread takes 10 milliseconds to complete the execution, then on a machine with a single processor, the total time taken is 20 milliseconds plus thread context switching time if any.
+
