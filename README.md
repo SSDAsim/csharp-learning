@@ -2228,3 +2228,26 @@ If you have two threads and if each thread takes 10 milliseconds to complete the
 - On a single threaded application, the overhead of context switching affects the performance.
 - If you have two threads and each thread takes 10 milliseconds to complete the execution, then on a machine with a single processor, the total time taken is 20 milliseconds plus thread context switching time if any.
 
+## Thread Pool in C#
+
+### The Request Life cycle of a Thread 
+
+This is the LifeCycle of the thread in C#: 
+Request => Thread Object => Resources Allocated => Task Executed => Garbage Collection
+
+The performance can be improved using *Thread Pooling*. 
+
+### Thread Pool in C#:
+
+- a collection of threads that can be reused to perform a number of tasks in the background. 
+- request => goes to thread pool => check if any thread is available in the pool => if available => takes thread and execute the task
+- once thread executes the task, then it is sent back to thread pool so that it can be reused. 
+- this reusability allows any applicattion to create a number of threads and this enables less memory consumption.
+
+### How to use Thread Pool in C#?
+
+- import ```using System.Threading;```
+- use *ThreadPool* class and call *QueueUserWorkItem* static method ```ThreadPool.QueueUserWorkItem(new WaitCallback(MyMethod));```. This method takes one parameter of type **WaitCallback**. While creating the object of **WaitCallback** class, you need to pass the method name that you want to execute. 
+```ThreadPool.QueueUserWorkItem(new WaitCallback(MyMethod));```
+-  *QueueUserWorkItem* queues the function for execution and that function executes when a thread becomes available from the pool. 
+- if no thread available, then it will wait. 
