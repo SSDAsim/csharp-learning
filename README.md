@@ -2251,3 +2251,22 @@ The performance can be improved using *Thread Pooling*.
 ```ThreadPool.QueueUserWorkItem(new WaitCallback(MyMethod));```
 -  *QueueUserWorkItem* queues the function for execution and that function executes when a thread becomes available from the pool. 
 - if no thread available, then it will wait. 
+
+## Foreground and Background Threads in C#
+
+### Foreground Thread in C#:
+
+- they keep running after the application is closed to complete their assigned tasks.
+- foreground thread do not care whether main thread is alive or not. 
+- the CLR will not shut down the application until all the Foreground Threads have finished their assigned work. 
+- *Main* Thread is a Foreground Thread.
+- By default, when we create a thread in C#, it is a Foreground Thread.
+
+### Background Thread in C#:
+
+- they will quite when application quits.
+
+### How to Make a Thread as Background Thread in C#?
+
+- ```isBackground {get; set;}``` property is used to get or set the value indicating if the thread is a Foreground or Background Thread. It throws ThreadStateException if the thread is dead.
+
