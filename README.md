@@ -2275,3 +2275,85 @@ The performance can be improved using *Thread Pooling*.
 ### How to Debug a Specific Thread in C#?
 
 Suppose you want to debug only Thread One. You don’t want to debug Thread Two. This is also possible. Visual Studio provides two options i.e. **Freeze** and **Thaw**. So, when you select the Freeze option of a thread, then that thread is not going to be debugged by a debugger. Similarly, if you select the Thaw option of a thread, then again it is going to be debugged by the debugger. When a thread is created in C#, by default it is created with the Thaw option.
+
+## Array 
+
+### What is the difference between for loop and for each loop in C# to access array values?
+
+- in case of for loop, the loop variable refers to the index of the array while in case of foreach loop, the variable refers to the individual element of the array.
+- irrespective of the type of the array, the loop variable must be of type *int*. while in case of foreach the datatype of the loop variable must be the same as the values stored in the array. look at the following: 
+```csharp 
+string[] Countries = {"India", "USA", "UK"};
+
+foreach (string country in Countries) {
+    //.....
+}
+```
+- Most important thing: for loop in C# can be used both for accessing values from an array as well as assigning values to an array whereas the foreach loop in C# can only be used for accessing the values from an array but not for assigning values into an array.
+
+## 2D Arrays in C#
+
+### What is a Two-Dimensional Array in C#?
+The arrays which store the elements in the form of rows and columns are called **Two-Dimensional Array** in C#. The two-dimensional array which is also called a multidimensional array is of two types in C#. They are as follows
+
+1. *Rectangular Array*: The array whose rows and columns are equal is called a rectangular array
+2. *Jagged Array*: The array whose rows and columns are not equal is called a jagged array
+
+### Rectangular 2D Arrays:
+
+The first index shows the row of the matrix and the second index shows the column of the matrix.
+```csharp
+int[,] matrix = new int[3,3];
+
+// to access any element (at 2nd row and 3rd column)
+Console.WriteLine(A[1,2]);
+
+// declare and initialize a 2D array 
+int[,] A = {{2, 5, 9}, {1, 3, 7}};
+
+// another way to declare and initialize a 2D array
+int[,] A = new int[2,3]
+{
+    {2, 5, 9}, {1, 3, 7}
+};
+
+// accessing array elements using for loop 
+
+for (int i = 0; i < 2; i++) // outer loop to access the rows
+{
+    for (int j = 0; j < 3; j++) // inner loop to access the columns
+    {
+        Console.WriteLine(A[i, j]); // Access the array elements
+    }
+}
+
+// instead of hardcoding the size of the Rows and Columns use arr.GetLength()
+// arr.GetLength(0) returns the size of the rows 
+// arr. GetLength(1) returns the size of the columns
+```
+
+## GetLength()
+
+For 2D arrays, the ```arr.GetLength(0)``` will return the number of *rows* while ```arr.GetLength(1)``` will return the number of *columns*. 
+
+```csharp
+//Assigning values to the 2D array by using nested for loop
+//arr.GetLength(0): Returns the size of the Row
+//arr.GetLength(0): Returns the size of the Column
+for (int i = 0; i < RectangleArray.GetLength(0); i++)
+{
+    for (int j = 0; j < RectangleArray.GetLength(1); j++)
+    {
+        a += 5;
+        RectangleArray[i, j] = a;
+    }
+}
+```
+
+## 2D Array Declaration and Initialization at the Same Statement:
+
+```csharp
+int[,] NumbersArray = {{11,12,13,14},
+    {21,22,23,24},
+    {31,32,33,34}};
+```

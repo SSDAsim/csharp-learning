@@ -1,0 +1,7 @@
+C:\dotnet\arrays\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\TwoDimensionalArray.exe.config
+C:\dotnet\arrays\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\TwoDimensionalArray.exe
+C:\dotnet\arrays\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\TwoDimensionalArray.pdb
+C:\dotnet\arrays\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.csproj.AssemblyReference.cache
+C:\dotnet\arrays\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.exe
+C:\dotnet\arrays\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\TwoDimensionalArray.pdb
