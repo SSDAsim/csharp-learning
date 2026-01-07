@@ -2332,7 +2332,7 @@ for (int i = 0; i < 2; i++) // outer loop to access the rows
 // arr. GetLength(1) returns the size of the columns
 ```
 
-## GetLength()
+### GetLength()
 
 For 2D arrays, the ```arr.GetLength(0)``` will return the number of *rows* while ```arr.GetLength(1)``` will return the number of *columns*. 
 
@@ -2350,10 +2350,33 @@ for (int i = 0; i < RectangleArray.GetLength(0); i++)
 }
 ```
 
-## 2D Array Declaration and Initialization at the Same Statement:
+### 2D Array Declaration and Initialization at the Same Statement:
 
 ```csharp
 int[,] NumbersArray = {{11,12,13,14},
     {21,22,23,24},
     {31,32,33,34}};
+```
+
+### Jagged Array
+
+If the column size varies from row to row then it is a *Jagged Array*. For example, row1 may have 5 columns, row2 may have 3 columns and so on. While in *Rectangular Array* the column size remains the same for all rows. The jagged array in C# is also called the *array of arrays*. This is because in the case of the jagged array each row is a single-dimensional array. So, a combination of multiple single-dimensional arrays with different column sizes forms a jagged array in C#.
+
+#### Syntax:  <type> [][] <name> = new <type> [rows][];
+#### Example:
+```csharp
+int [][] arr = new int[3][];
+//Or
+int [][] arr = {list of values};
+
+int [][] arr = new int[4][];
+
+// later, specify the columns for each row
+arr[0] = new int[5]; // we want five columns in the first row
+arr[1] = new int[6]; // we want six columns in the first row
+arr[2] = new int[4]; // we want four columns in the first row
+arr[3] = new int[5]; // we want five columns in the first row
+
+
+// arr[i].Length => returns the length of each row (number of columns of the row)
 ```
