@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\arrays\\InsertRangeArrayList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67C21FEF-AC77-4598-AF1F-8CE8DD207614}|InsertRangeArrayList\\InsertRangeArrayList.csproj|c:\\dotnet\\arrays\\insertrangearraylist\\insertrangearraylist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C21FEF-AC77-4598-AF1F-8CE8DD207614}|InsertRangeArrayList\\InsertRangeArrayList.csproj|solutionrelative:insertrangearraylist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\arrays\\InsertRangeArrayList\\InsertRangeArrayList\\Program.cs",
+              "RelativeDocumentMoniker": "InsertRangeArrayList\\Program.cs",
+              "ToolTip": "C:\\dotnet\\arrays\\InsertRangeArrayList\\InsertRangeArrayList\\Program.cs",
+              "RelativeToolTip": "InsertRangeArrayList\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T07:41:06.23Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

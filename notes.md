@@ -2380,3 +2380,161 @@ arr[3] = new int[5]; // we want five columns in the first row
 
 // arr[i].Length => returns the length of each row (number of columns of the row)
 ```
+
+## Advantages and Disadvantages of Arrays
+
+*Strictly Typed Array*: Array will hold same type of data e.g. int. Violation will result in compile time error.
+*Loosely Typed Collection(ArrayList)*: Array may hold more than one type of data. It will cause Run-time error. The ArrayList is operated on object data type that makes it loosely typed. 
+
+```csharp 
+//Creating a Collection using Array List
+ArrayList numberArray = new ArrayList();
+numberArray.Add(10);
+numberArray.Add(200);
+//No CompileTime Error
+numberArray.Add("Pranaya");
+//We Get Runtime Error, when we access the 3rd Element
+```
+
+### Disadvantages:
+
+1. Array size is fix, so we need to know in adavance how many elements are going to be present in the array. We can never increase or decrease the size of an exisiting array.
+2. Cause wastage of memory if we allocate more memory to an array then its use. 
+3. Insertion or deletion in the middle of the array is not possible.
+
+**Note:** To deal with all these issues, *Collections* were introduced in the C#.
+
+## Collections in C#
+
+1. Collection is a dynamic array since they have the capability to store multiple values 
+2. Size can be increased dynamically
+3. It provides the facility to insert, delete or remove an element from the middle of the collection.
+4. Collections are classes that represent a group of object. 
+
+## ArrayList in C#
+
+### ArrayList Collection Class in C#
+
+1. Non-generic collection class, works like an array but allows dynamic resizing, adding, and deleting elements from the middle of the collection.
+2. It can be used to add unknown data i.e. when we don't know the types of data and size of the data
+3. There is no need to specify the size of the ArrayList. 
+4. ArrayList can store elements of the same type and of different types.
+5. Elements in this collection can be accessed using integer indexes. (zero-based indexing)
+6. Allows duplicate elements.
+
+### How to Create an ArrayList:
+
+You can use one of following three constructors which we can use to create an instance of the ArraList class.
+1. ArrayList() => initializes a new instance that is empty and has default initial capacity.
+2. ArrayList(ICollection c) => initializes a new instance that contains elements copied from the specified collection 
+3. ArrayList(int capacity) => initializes a new instance that is empty and has specified initial capacity.
+
+### How to Add Elements into ArrayList in C#?
+
+Using ```Add()``` method.
+
+```csharp
+//Adding elements at the end of the ArrayList using Add() method
+ArrayList arrayList1 = new ArrayList();
+arrayList1.Add(101); //Adding Integer Value
+arrayList1.Add("James"); //Adding String Value
+arrayList1.Add("James"); //Adding Duplicate Value
+arrayList1.Add(" "); //Adding Empty
+arrayList1.Add(true); //Adding Boolean
+arrayList1.Add(4.5); //Adding double
+arrayList1.Add(null); //Adding null
+foreach (var item in arrayList1)
+{
+    Console.WriteLine(item);
+}
+```
+
+### How to Access an ArrayList in C#?
+
+*ArrayList* implements the **IList** interface. As it implements the IList interface, so we can access the elements using an indexer, in the same way as an array. *When a collection class implements the IList interface, then we can access the elements of that collection by using the integer indexes.*  
+
+#### Important point to remember while accessing element:
+
+While adding element into the ArrayList, it will automatically cast into object type and stored in the collection. So, when accessing an element, an explicit casting to the appropriate types is required, or else you can use the *var* variable. 
+
+```csharp
+int firstElement = (int)arrayList1[0]; //returns 101
+string secondElement = (string)arrayList1[1]; //returns "James"
+
+//Using var keyword without explicit casting
+var firsItem = arrayList1[0]; //returns 101
+var secondItem = arrayList1[1]; //returns "James"
+```
+
+### How to Iterate an ArrayList in C#?
+
+Any class that implements *ICollection* interface supports the iteration of the collection types, so we can use either *for* loop or *foreach* loop to iterate a collection of type ArrayList.
+
+```csharp
+// arrayList1.Count => this property returns the number of elements present in ArrayList
+for (int i = 0; i < arrayList1.Count; i++) {
+    //....
+}
+```
+
+### How to Insert an Element into a Specified Position in an ArrayList Collection in C#?
+
+```csharp
+void Insert(int index, object? value);
+```
+
+If we have a collection and we want to insert into another collection starting from specific index. Then we can use ```void InsertRange(int index, ICollection c)```
+
+### How to Remove Elements from ArrayList in C#?
+
+1. arrayList.Remove(object? obj) => removes first occurence of the specified object from System.Collection.ArrayList
+2. arrayList.RemoveAt(int index) => removes element at the specified index
+3. arrayList.RemoveRange(int index, int count) => removes a range of elements from the ArrayList 
+3. arrayList.Clear() => removes all items from the Array list
+
+### How do we Check whether an Element exists in ArrayList or not in C#?
+
+```arrayList.Contains(object? item): ``` => returns *true* if the item is found in the array, false otherwise
+
+**Note**: It is not recommended to use the non-generic collection class ArrayList in C# due to performance issues i.e. boxing and unboxing as it is operating on the object data type. So, instead of using ArrayList, it is recommended to use the generic collection List<object> to store heterogeneous objects. To store data of the same data type, use Generic List<T>.
+
+### How to Clone the Non-Generic ArrayList Collection in C#?
+
+```Clone()``` => creates and returns a shallow copy of the ArrayList
+
+```csharp
+//Creating a clone of the arrayList using Clone method
+ArrayList cloneArrayList = (ArrayList)arrayList.Clone();
+```
+
+### How to copy an ArrayList to an existing array in C#?
+
+1. CopyTo(Array array) => copy entire ArrayList to a compatible one-dimensional Array, starting at the beginning of the array.
+2. CopyTo(Array array, int arrayIndex) => copy entire ArrayList to a compatible one-dimensional Array, starting at the specified index of the array.
+3. CopyTo(int index, Array array, int arrayIndex, int count) => copy a range of elements from the System.Collections.ArrayList to a compatible one-dimensional Array, starting at the specified index of the target array. 'index' specifies the index in the source System.Collections.ArrayList at which the copying begins.
+
+### How to Sort the Elements of an ArrayList Collection in C#?
+
+1. Sort() => sort the elements in the entire System.Collection.ArrayList
+2. Sort(IComparer? comparer) => sort the elements using specified comparer
+3. Sort(int index, int count, IComparer? comparer) => sort the elements in a range of elements in ArrayList using the specified comparer.
+
+These methods use the QuickSort algorithm to perform sorting on the ArrayList and the elements are arranged in ascending order. 
+
+### What is the difference between an Array and an Array List in C#?
+
+- dynamic nature of the non-generic collection ArrayList. Unlike Arrays, Elements can be added or removed from the Array List collection at any point in time.
+
+#### Array:
+1. Fixed Length
+2. Cannot insert it into the middle
+3. Cannot delete from middle
+4. It is type-safe, so we can store only similar types of data based on the data type.
+5. Boxing and Unboxing are not required.
+
+#### ArrayList:
+1. Variable Length
+2. Can insert an element into the middle of the collection
+3. Can delete elements from the middle of the collection
+4. It is not type-safe, so we can store any type of data.
+5. Boxing and Unboxing are required as it is operated on the object data type.

@@ -1,0 +1,7 @@
+C:\dotnet\arrays\AddArrayList\AddArrayList\bin\Debug\AddArrayList.exe.config
+C:\dotnet\arrays\AddArrayList\AddArrayList\bin\Debug\AddArrayList.exe
+C:\dotnet\arrays\AddArrayList\AddArrayList\bin\Debug\AddArrayList.pdb
+C:\dotnet\arrays\AddArrayList\AddArrayList\obj\Debug\AddArrayList.csproj.AssemblyReference.cache
+C:\dotnet\arrays\AddArrayList\AddArrayList\obj\Debug\AddArrayList.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\AddArrayList\AddArrayList\obj\Debug\AddArrayList.exe
+C:\dotnet\arrays\AddArrayList\AddArrayList\obj\Debug\AddArrayList.pdb

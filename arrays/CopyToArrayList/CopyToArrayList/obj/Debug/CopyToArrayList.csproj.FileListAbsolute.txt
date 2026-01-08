@@ -1,0 +1,7 @@
+C:\dotnet\arrays\CopyToArrayList\CopyToArrayList\bin\Debug\CopyToArrayList.exe.config
+C:\dotnet\arrays\CopyToArrayList\CopyToArrayList\bin\Debug\CopyToArrayList.exe
+C:\dotnet\arrays\CopyToArrayList\CopyToArrayList\bin\Debug\CopyToArrayList.pdb
+C:\dotnet\arrays\CopyToArrayList\CopyToArrayList\obj\Debug\CopyToArrayList.csproj.AssemblyReference.cache
+C:\dotnet\arrays\CopyToArrayList\CopyToArrayList\obj\Debug\CopyToArrayList.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\CopyToArrayList\CopyToArrayList\obj\Debug\CopyToArrayList.exe
+C:\dotnet\arrays\CopyToArrayList\CopyToArrayList\obj\Debug\CopyToArrayList.pdb

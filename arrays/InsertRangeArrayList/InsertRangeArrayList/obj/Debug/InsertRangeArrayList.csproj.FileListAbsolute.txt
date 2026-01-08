@@ -1,0 +1,7 @@
+C:\dotnet\arrays\InsertRangeArrayList\InsertRangeArrayList\bin\Debug\InsertRangeArrayList.exe.config
+C:\dotnet\arrays\InsertRangeArrayList\InsertRangeArrayList\bin\Debug\InsertRangeArrayList.exe
+C:\dotnet\arrays\InsertRangeArrayList\InsertRangeArrayList\bin\Debug\InsertRangeArrayList.pdb
+C:\dotnet\arrays\InsertRangeArrayList\InsertRangeArrayList\obj\Debug\InsertRangeArrayList.csproj.AssemblyReference.cache
+C:\dotnet\arrays\InsertRangeArrayList\InsertRangeArrayList\obj\Debug\InsertRangeArrayList.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\InsertRangeArrayList\InsertRangeArrayList\obj\Debug\InsertRangeArrayList.exe
+C:\dotnet\arrays\InsertRangeArrayList\InsertRangeArrayList\obj\Debug\InsertRangeArrayList.pdb

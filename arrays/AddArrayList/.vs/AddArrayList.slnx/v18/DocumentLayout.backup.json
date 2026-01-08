@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnet\\arrays\\AddArrayList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CFA36F2-0366-4079-B49E-866F73799FAB}|AddArrayList\\AddArrayList.csproj|c:\\dotnet\\arrays\\addarraylist\\addarraylist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CFA36F2-0366-4079-B49E-866F73799FAB}|AddArrayList\\AddArrayList.csproj|solutionrelative:addarraylist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnet\\arrays\\AddArrayList\\AddArrayList\\Program.cs",
+              "RelativeDocumentMoniker": "AddArrayList\\Program.cs",
+              "ToolTip": "C:\\dotnet\\arrays\\AddArrayList\\AddArrayList\\Program.cs*",
+              "RelativeToolTip": "AddArrayList\\Program.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T07:04:09.679Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
