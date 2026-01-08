@@ -2538,3 +2538,66 @@ These methods use the QuickSort algorithm to perform sorting on the ArrayList an
 3. Can delete elements from the middle of the collection
 4. It is not type-safe, so we can store any type of data.
 5. Boxing and Unboxing are required as it is operated on the object data type.
+
+## Hashtable Collection Class 
+
+The issue with *Array* and *ArrayList* is that we have to access using the index, and it is hard for us to rememeber the index. If, instead of accessing the elements using the index, if we could access using a key? That's where **Hashtable** comes into the picture. 
+
+### What is a Hashtable
+
+- Hashtable is a Non-Generic Collection that stores the element in the form of "Key-Value Pairs". We can store elements of same data type as well as of different data type.
+- The data in the Hastable are organized based on the hash code of the key. 
+- the Key in the Hashtable is defined by us and it can be of any data type. Keys must be unique and not null.
+- Hashtable accepts both null and duplicate values.
+- Values can be accessed using the associated key.
+- Hashtable class comes under the System.Collections namespace
+- Hashtable computes a hash code for each key and then it uses that hash code to look up the element very quickly which increases the performance of the application. 
+- It implements the IDictionary interface.
+
+### How Actually the Hashtable works in C#?
+
+- When we add elements to a Hashtable, it takes the *key* data(string, int, complex types) and converts it into simple hash integer values so lookup can be easy. 
+- Becuase of this conversion(the key to an integer), the performance of the hashtable is less as compared to the ArrayList.
+- Once the conversion is done, then the data is added to the hastable collection. 
+
+### Differences between ArrayList and Hashtable in C#:
+
+1. **Lookup:** ArrayList can be only looked up via the index number which is generated internally. Hashtable can be looked up by a custom-defined key.
+2. **Performance**: ArrayList is faster than hashtable because of extra tasks performed in hashtables i.e. hashing.
+3. **Scenario**: If you want a key lookup use hashtable. If you just want to add and browser through a collection then use ArrayList.
+
+### How to Add Elements into a Hashtable Collection in C#?
+
+```Add(object key, object? value)```  For example: ```hashtable.Add("Eld", 1001)```
+
+Even it is also possible to create a Hashtable using collection-initializer syntax as follows:
+```csharp
+var cities = new Hashtable(){
+    {“UK”, “London, Manchester, Birmingham”},
+    {“USA”, “Chicago, New York, Washington”},
+    {“India”, “Mumbai, Delhi, BBSR”}
+};
+```
+
+### How to access a Non-Generic Hashtable Collection in C#?
+
+#### Using Keys to Access Hashtable in C#:
+```hashtable[“Name”]```
+
+#### Using ForEach loop to Access Hashtable in C#:
+
+```csharp
+foreach (object obj in hashtable.Keys)
+{
+    Console.WriteLine(obj + ” : ” + hashtable[obj]);
+}
+
+// The elements in Hashtable are stored as DictionaryEntry objects. So, instead of an object, you can also use DictionaryEntry.
+foreach (DictionaryEntry item in hashtable)
+{
+    Console.WriteLine($”Key: {item.Key}, Value: {item.Value}”);
+}
+```
+
+
+
