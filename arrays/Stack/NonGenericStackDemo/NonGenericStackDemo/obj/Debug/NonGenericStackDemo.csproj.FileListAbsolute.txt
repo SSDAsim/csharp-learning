@@ -1,0 +1,7 @@
+C:\dotnet\arrays\Stack\NonGenericStackDemo\NonGenericStackDemo\bin\Debug\NonGenericStackDemo.exe.config
+C:\dotnet\arrays\Stack\NonGenericStackDemo\NonGenericStackDemo\bin\Debug\NonGenericStackDemo.exe
+C:\dotnet\arrays\Stack\NonGenericStackDemo\NonGenericStackDemo\bin\Debug\NonGenericStackDemo.pdb
+C:\dotnet\arrays\Stack\NonGenericStackDemo\NonGenericStackDemo\obj\Debug\NonGenericStackDemo.csproj.AssemblyReference.cache
+C:\dotnet\arrays\Stack\NonGenericStackDemo\NonGenericStackDemo\obj\Debug\NonGenericStackDemo.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\Stack\NonGenericStackDemo\NonGenericStackDemo\obj\Debug\NonGenericStackDemo.exe
+C:\dotnet\arrays\Stack\NonGenericStackDemo\NonGenericStackDemo\obj\Debug\NonGenericStackDemo.pdb

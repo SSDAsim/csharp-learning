@@ -1,0 +1,7 @@
+C:\dotnet\arrays\Stack\StackClone\StackClone\bin\Debug\StackClone.exe.config
+C:\dotnet\arrays\Stack\StackClone\StackClone\bin\Debug\StackClone.exe
+C:\dotnet\arrays\Stack\StackClone\StackClone\bin\Debug\StackClone.pdb
+C:\dotnet\arrays\Stack\StackClone\StackClone\obj\Debug\StackClone.csproj.AssemblyReference.cache
+C:\dotnet\arrays\Stack\StackClone\StackClone\obj\Debug\StackClone.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\Stack\StackClone\StackClone\obj\Debug\StackClone.exe
+C:\dotnet\arrays\Stack\StackClone\StackClone\obj\Debug\StackClone.pdb

@@ -2655,3 +2655,44 @@ hashtable.Keys.CopyTo(myObjArrayKey, 0);
 hashtable.Values.CopyTo(myObjArrayValue, 0);
 ```
 
+## Non-Generic Stack Collection Class 
+
+*Stack* in C# is Defined as both Generic and Non-Generic types of collection. Generic is defined under *System.Collections.Generic* and Non-Generic is defined under *System.Collections* namespace.
+
+### How to create a Non-Generic Stack Collection in C#?
+
+1. ```Stack()``` => initialize a new instance of Stack class that is empty and has initial capacity.
+2. ```Stack(ICollection col)``` => initialize a new instance of Stack class that contains elements copied from the specified collection.
+3. ```Stack(int initialCapactiy)``` => initializes a new instance of the *System.Collections.Stack* class with specified intial capacity.
+
+### How to Add Elements into a Stack Collection in C#?
+
+```Push(object obj)```
+
+### How to Remove Elements from a Non-Generic Stack Collection in C#?
+
+1. ```Pop()``` => removes and returns the object at the top of the Stack. 
+2. ```Clear()``` => removes all the from the Stack.
+
+### How to get the topmost element of a Stack in C#?
+
+1. ```Pop()``` 
+2. ```Peek()``` => returns the top most element without removing it. returns an exception **System.InvalidOperationException** if there is no element.
+
+### How to check whether an element exists or not in the stack in C#?
+
+```Contains(object obj)```
+
+### How to Clone the Non-Generic Stack Collection in C#?
+
+```Clone()``` => creates and returns a shallow copy of a stack object.
+
+### How to copy a stack to an existing array in C#?
+
+```CopyTo(Array array, int index)``` => copy the Stack elements to an existing one-dimensional Array, starting at the specified array index
+
+### Characteristics of Non-Generic Stack Collection Class in C#:
+
+1. Capacity of Stack == number of elements it can hold. as we add element to the stack, its capacity is automatically increased. 
+2. If Count is less than the capacity of the Stack then push is O(1). If the capacity needs to be increased to accommodate the new element, **Push** becomes an O(n) operation. **Pop** is an O(1)
+3. Stack Collection in C# allows both null and duplicate values. 
