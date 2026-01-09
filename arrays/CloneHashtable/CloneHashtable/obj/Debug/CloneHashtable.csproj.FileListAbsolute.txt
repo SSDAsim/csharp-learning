@@ -1,0 +1,7 @@
+C:\dotnet\arrays\CloneHashtable\CloneHashtable\bin\Debug\CloneHashtable.exe.config
+C:\dotnet\arrays\CloneHashtable\CloneHashtable\bin\Debug\CloneHashtable.exe
+C:\dotnet\arrays\CloneHashtable\CloneHashtable\bin\Debug\CloneHashtable.pdb
+C:\dotnet\arrays\CloneHashtable\CloneHashtable\obj\Debug\CloneHashtable.csproj.AssemblyReference.cache
+C:\dotnet\arrays\CloneHashtable\CloneHashtable\obj\Debug\CloneHashtable.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\CloneHashtable\CloneHashtable\obj\Debug\CloneHashtable.exe
+C:\dotnet\arrays\CloneHashtable\CloneHashtable\obj\Debug\CloneHashtable.pdb

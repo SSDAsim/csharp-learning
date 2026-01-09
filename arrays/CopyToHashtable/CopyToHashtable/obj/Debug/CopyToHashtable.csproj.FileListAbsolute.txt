@@ -1,0 +1,7 @@
+C:\dotnet\arrays\CopyToHashtable\CopyToHashtable\bin\Debug\CopyToHashtable.exe.config
+C:\dotnet\arrays\CopyToHashtable\CopyToHashtable\bin\Debug\CopyToHashtable.exe
+C:\dotnet\arrays\CopyToHashtable\CopyToHashtable\bin\Debug\CopyToHashtable.pdb
+C:\dotnet\arrays\CopyToHashtable\CopyToHashtable\obj\Debug\CopyToHashtable.csproj.AssemblyReference.cache
+C:\dotnet\arrays\CopyToHashtable\CopyToHashtable\obj\Debug\CopyToHashtable.csproj.CoreCompileInputs.cache
+C:\dotnet\arrays\CopyToHashtable\CopyToHashtable\obj\Debug\CopyToHashtable.exe
+C:\dotnet\arrays\CopyToHashtable\CopyToHashtable\obj\Debug\CopyToHashtable.pdb

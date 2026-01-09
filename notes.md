@@ -2599,5 +2599,59 @@ foreach (DictionaryEntry item in hashtable)
 }
 ```
 
+### How to Remove Elements from a Non-Generic Hashtable Collection in C#?
 
+1. ```Remove(object key)``` => removes the element with the specified key.
+2. ```Clear()``` => removes all the elements from the Hashtable.
+
+### How to Assign Values to a Hashtable with Indexer in C#?
+
+```hashtable[key] = value;```
+
+### How to Update a Hashtable in C# using Indexer?
+
+Hashtable in C# is *non-generic* collection class, that means we have to take care of type casting and we need to type-cast values to the appropriate type while retrieving it. 
+
+```csharp
+// type cast values to appropriate type while retrieving it
+string EmployeeName = (string)employee["Name"]; //Cast to String
+int EmployeeSalary = (int)employee["Salary"];   //Cast to Int
+
+//Updating the Name and Salary
+employee["Name"] = "Smith"; //Update value of Name key
+employee["Salary"] = 5000; //Update value of Salary key
+```
+
+### How to Clone a Non-Generic Hashtable Collection in C#?
+
+```Clone()``` => creates and returns a shallow copy of a Hashtable object.
+
+```csharp
+//Creating a clone Hashtable using Clone method
+Hashtable cloneHashtable = (Hashtable)hashtable.Clone();
+```
+
+### How to Copy a Hashtable to an Existing Array in C#?
+
+```CopyTo(Array array, int arrayIndex)``` => copy hashtable elements to a one-dimensional Array object, starting at the specific index in the array. *array* is the destination of the DictionaryEntry objects copied from the hastable.     
+
+The key/value pairs are copied to the Array object. The operation is O(n) operation, where n is Count. 
+
+1. To Copy only the keys of the hastable, use ```Hashtable.Keys.CopyTo```
+2. To Copy only the values of the hashtable, use ```Hashtable.Values.CopyTo```
+
+```csharp
+//Copying the Hashtable to an object array
+DictionaryEntry[] myArray = new DictionaryEntry[hashtable.Count];
+hashtable.CopyTo(myArray, 0);
+
+Object[] myObjArrayKey = new Object[hashtable.Count];
+Object[] myObjArrayValue = new Object[hashtable.Count];
+
+// copy only the object keys
+hashtable.Keys.CopyTo(myObjArrayKey, 0);
+
+// copy only object values
+hashtable.Values.CopyTo(myObjArrayValue, 0);
+```
 
