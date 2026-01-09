@@ -2657,7 +2657,7 @@ hashtable.Values.CopyTo(myObjArrayValue, 0);
 
 ## Non-Generic Stack Collection Class 
 
-*Stack* in C# is Defined as both Generic and Non-Generic types of collection. Generic is defined under *System.Collections.Generic* and Non-Generic is defined under *System.Collections* namespace.
+*Stack* in C# is Defined as both Generic and Non-Generic types of collection. *Generic Stack* is defined under *System.Collections.Generic* and Non-Generic is defined under *System.Collections* namespace.
 
 ### How to create a Non-Generic Stack Collection in C#?
 
@@ -2696,3 +2696,45 @@ hashtable.Values.CopyTo(myObjArrayValue, 0);
 1. Capacity of Stack == number of elements it can hold. as we add element to the stack, its capacity is automatically increased. 
 2. If Count is less than the capacity of the Stack then push is O(1). If the capacity needs to be increased to accommodate the new element, **Push** becomes an O(n) operation. **Pop** is an O(1)
 3. Stack Collection in C# allows both null and duplicate values. 
+
+
+## Non-Generic Queue Collection Class 
+
+*Queue* in C# is Defined as both Generic and Non-Generic types of collection. *Generic Queue* is defined under *System.Collections.Generic* and Non-Generic is defined under *System.Collections* namespace.
+
+### Characteristics of Non-Generic Queue Collection Class in C#:
+
+1. *Enqueue* => adds an element at the end of the Queue
+2. *Dequeue* => removes the oldest element from the start of the Queue
+3. *Peek* => returns the oldest element from the start of the queue but does not remove it
+4. The capacity of a Queue is the number of elements the queue can hold. As we add elements to a queue, the capacity of the queue is automatically increased.
+5. The Non-Generic Queue Collection allows both null and duplicate values.
+
+### How to create a Queue in C#?
+
+1. ```Queue()```
+2. ```Queue(ICollection col)```
+3. ```Queue(int capacity)```
+4. ```Queue(int capacity, float growFactor)``` => parameter *growFactor* specifies the factor by which the capacity of the queue is expanded. 
+
+### How to Add Elements into a Queue in C#?
+
+```Enqueue(object obj)``` => add object at the end of the queue
+
+### How to Remove Elements from the Queue Collection in C#?
+
+1. ```Dequeue()``` => removes and returns the oldest element from the start of the Queue. 
+2. ```Clear()``` => removes all object from the Queue.
+
+### How to get the First Element of the Queue Collection in C#?
+
+1. ```Dequeue()```
+2. ```Peek()```
+
+### Check Whether an Element Exists or not in the Queue Collection in C#?
+
+```Contains(object obj)```
+
+### Clone the Non-Generic Queue Collection in C#?
+
+```Clone()``` => creates and returns a shallow copy of a Queue Object
